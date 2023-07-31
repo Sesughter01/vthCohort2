@@ -1,0 +1,101 @@
+:root{
+    font-size: 16px;
+}
+
+
+.mainHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    
+}
+
+.nav ul {
+    display: flex;
+}
+
+/* Sibling Selectors */
+
+img{
+    /* float: left; */
+}
+img.logo{
+    width: 200px;
+}
+img + nav{
+    /* background-color: blue; */
+    /* border: 2px solid black; */
+}
+
+ li {
+    list-style: none;
+    margin-inline: 2rem;
+}
+
+/* Pseudo-Class Selector */
+a{
+    text-decoration: none;
+}
+
+/* unvisited link */
+header a:link{
+    color:black;
+  
+}
+/* visited */
+
+
+/* hover */
+header a:hover{
+    color:black;
+}
+
+/* active */
+
+header a:active{
+    color: green;
+}
+.main_section{
+    display: flex;
+    /* justify-content: space-around; */
+    color:hsl(233, 8%, 79%);
+}
+
+/* Sidebar */
+
+.sidebar{
+    margin: 0 2rem auto 1rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+.side_item{
+    margin-block:2rem ;
+}
+
+/* Property Cards */
+
+.property_cards{
+    /* background-color: blue; */
+    /* border: 1px solid black; */
+    margin:3rem;
+    /* border: 8px solid black; */
+    
+    font-size: 38px;
+}
+.card{
+  
+  padding: 3rem;
+
+}
+.property_cards:hover{
+    /* background-color: rgb(255, 0, 251); */
+}
+
+.property_cards .card > p{
+    /* font-size: 2.5em; */
+    /* color: whitesmoke; */
+}

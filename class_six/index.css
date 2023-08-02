@@ -32,7 +32,8 @@
     grid-area: main; 
 }
 #item4 {
-     grid-area: right; 
+     grid-area: right;
+     list-style: none; 
     }
 #item5 { 
     grid-area: footer; 

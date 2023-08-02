@@ -9,6 +9,13 @@
     gap: 1rem;
 }
 
+.outer {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    gap: 1rem;
+}
+
 
 
 .inner>img{
@@ -33,4 +40,6 @@
 #para_three{
     background-color: rgb(105, 54, 246);
 }
+
+
 

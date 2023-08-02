@@ -27,12 +27,15 @@
 }
 #item2 {
      grid-area: menu; 
+     list-style: none;
     }
 #item3 { 
     grid-area: main; 
+    list-style: none;
 }
 #item4 {
      grid-area: right; 
+     list-style: none;  
     }
 #item5 { 
     grid-area: footer; 

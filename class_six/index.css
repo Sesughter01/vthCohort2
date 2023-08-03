@@ -28,14 +28,17 @@
 #item2 {
      grid-area: menu; 
      list-style: none;
+     text-decoration: none;
     }
 #item3 { 
     grid-area: main; 
     list-style: none;
+    text-decoration: none;
 }
 #item4 {
      grid-area: right; 
-     list-style: none;  
+     list-style: none; 
+     text-decoration: none; 
     }
 #item5 { 
     grid-area: footer; 

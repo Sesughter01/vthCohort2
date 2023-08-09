@@ -1,68 +1,60 @@
-/*  EXTERNAL CSS  */
-/* External css is css styles written in a separate file from the html or javascript . External css is stored in a file that has a .css file extension */
-
-
-/* what is a css selector */
-/* A css selector is a name used to define an element , its attributes or its state */
-
-/* Element name selectors use the name of the element as the selector */
-
 body{
     background-color: rgb(255, 255, 255);
     margin: 0;
-    border: 3px solid red;
+    padding: 100px;
+}
+
+h1{
+    font-size: 70px;
+}
+
+h2{
+    color: gold;
+    font-size: large;
+    font-style: normal;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
 }
 
 nav{
-    /* background-color: brown; */
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
 }
 
- header img{
+.navlinks ul{
+    display: flex;
+    gap: 20px;
    
- width: 200px;
+}
+.navlinks ul li{
+    list-style-type: none;    
 }
 
-p{
-    background-color: darkgoldenrod;
+a{
+    text-decoration: none;
+    color: black;
 }
 
-/* id selector is used to uniquely identify an element*/
-
-
-#first{
-    background-color: azure;
-}
-#second{
-    background-color: rgb(18, 122, 122);
-}
-
-
-
-/* Class selectors are used to select multiple elements in order to same styles to them */
-
- .main_header{
+section{
     display: flex;
- }
-
-/* Combinator selectors */
-
-/* Combinator selectors are used to select elements based on the relationship between them */
-
- /* descendant combinator */
-
- header ul{
-    display: flex;
- }
- /* child selector */
- nav > li{
-    background-color: blue;
- }
-
- ul li{
-    list-style: none;
-    margin-inline: 2rem;
+    gap: 50px;
 }
 
-/* Sibling */
+.leftContainer{
+    padding: 10px;
+}
 
-
+.rightContainer{
+    background-color: rgb(8, 8, 83);
+    flex-direction: column;
+    color: white;
+    padding: 10px 40px 10px 40px;
+}

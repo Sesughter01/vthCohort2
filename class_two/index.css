@@ -8,10 +8,53 @@
 /* Element name selectors use the name of the element as the selector */
 
 body{
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    border: 3px solid red;
+   margin: 50px; 
+   font-family: sans-serif;
+} 
+
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
 }
+
+header .navlist a{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+}
+
+.
+
+
+.logo{
+    width: 60px;
+    height:30px;
+}
+
+ .navlist a{
+    list-style: none;
+    margin-inline: 2rem;
+}
+
+.contain3{
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 nav{
     /* background-color: brown; */
@@ -22,9 +65,7 @@ nav{
  width: 200px;
 }
 
-p{
-    background-color: darkgoldenrod;
-}
+
 
 /* id selector is used to uniquely identify an element*/
 
@@ -58,10 +99,7 @@ p{
     background-color: blue;
  }
 
- ul li{
-    list-style: none;
-    margin-inline: 2rem;
-}
+
 
 /* Sibling */
 

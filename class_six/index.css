@@ -20,7 +20,9 @@
   }
 
 
-
+bdi{
+  color: blue;  
+}
 
 #item1 { 
     grid-area: header; 

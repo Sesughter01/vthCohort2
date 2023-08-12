@@ -1,0 +1,84 @@
+/* EXTERNAL CSS*/
+/* Css style that is written in a separate file from the html or JS file*/
+
+
+/* CSS selector is a name used to define an element its attributes or its state
+/*ELEMENT NAME SELECTOR use the name of the element as the selector*/
+
+
+body{
+    background-color:gainsboro;
+}
+
+header img{
+    display: block;
+    margin-inline: auto;
+}
+
+
+
+
+
+.first{
+    font-family: serif;
+    font-size: 20px;
+    text-decoration:none; 
+    background-color: cadetblue; 
+}
+.second{
+    font-family: serif;
+    font-size: 20px;
+    text-decoration:none; 
+    background-color: chocolate;
+    
+}
+
+.third{
+    font-family: serif;
+    font-size: 20px;
+    text-decoration:none; 
+    background-color: cornsilk;
+}
+
+.MainHeader{
+    display:inline-flex;
+}
+
+header ul{
+    display: flex;
+    font-family: serif;
+    font-size: 20px;
+}
+
+
+ul li{
+    list-style: none;
+    margin-inline: 1.5rem;
+}
+
+nav>li{
+    background-color: aquamarine;
+    display: inline-block;
+    list-style-type: none;
+}
+
+p{
+    padding: 5px;
+}
+
+
+
+
+
+
+
+/* ID selector is used to uniquely identify an element*/
+
+
+  /*    */
+  /*Combinator selectors explains the rel between selectors*/
+  /* There are four combinator selectors
+  Descendant selector(space)
+  Child selector(>)
+  Adjacent sibling selector(+)
+  General sibling selector(~) */

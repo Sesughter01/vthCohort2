@@ -1,15 +1,20 @@
-
-
-
-
-
-
-
+.item1{:grid-area:myOne;}
+.item2{:grid-area:myTwo;}
+.item3{:grid-area:myThree;}
+.item4{grid-area:myFour;}
+.item5{grid-area:myFive;}
+.item6{grid-area:mySix;}
+.item7{grid-area:mySeven;}
+.item8{grid-area:myEight;}
+.item9{grid-area:myNine;}
+.item10{grid-area:myTen}
 
 
 .grid-container {
     display: grid;
-    grid-template-areas: 'myArea myArea . . .';
+    grid-template-areas:'myOne myTwo myThree myFour myFive'
+                        'mySix mySeven myEight myNine myTen'
+    ;
     grid-gap: 10px;
     background-color: #2196F3;
     padding: 10px;

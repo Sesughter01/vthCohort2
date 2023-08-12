@@ -23,10 +23,6 @@ li{
     padding: 10px;
 }
 
-
-
-
-
 .item1 { grid-area:Header;}
 .item2 { grid-area:list1;}
 .item7 { grid-area:list2;}

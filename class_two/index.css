@@ -90,14 +90,26 @@ header .navlist a{
     margin-inline: 2rem;
 }
 
-.footer{
+.section2{
     display: flex;
-    justify-content: space-between;
 }
 
-.footer div div{
+.footer {
     display: flex;
 }
+
+.footer2{
+   display: flex;
+}
+
+.footer3{
+    display: flex;
+}
+
+.footer div{
+    flex-direction: column;
+}
+
 
 
 

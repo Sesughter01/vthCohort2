@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Seven | Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Introduction Javascript -->
+
+    <!-- Javascript Can Change HTML Content -->
+ <div class="change_html_content">
+     <h2>What Can JavaScript Do?</h2>
+ 
+      <p id="demo">JavaScript can change HTML content.</p>
+ 
+     <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Super Eagles!</button> <!--Inline Javascript-->
+     
+
+ </div>
+
+ <div class="change_attr_values">
+    
+        <p>JavaScript can change HTML attribute values.</p>
+
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+        <button onclick="document.getElementById('myImage').src='../assets/pic_bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="../assets/pic_bulboff.gif" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src='../assets/pic_bulboff.gif'">Turn off the light</button>
+ </div>
+        <br>
+        <!--JS can change the HTML style of an element-->
+ <div class="changing the style of an HTML element">
+  
+    <h3>Javscript can also change the style of an html content</h3>
+    <p id="size">Javascript can change HTML style</p>
+
+    <button type="button" onclick="document.getElementById('size').style.fontSize='45px'">Click here!</button>
+
+
+ </div>
+    
+</body>
+</html>

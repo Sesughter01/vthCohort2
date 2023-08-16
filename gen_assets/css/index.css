@@ -1,0 +1,45 @@
+width: 320px
+height: 78px
+
+background:#FFFFFF
+
+width: 155px
+height: 52px
+top: 9px
+left: 12px
+padding: 13px 5px 13px 0px
+logo
+
+width: 72px
+height: 57px
+top: 11px
+left: 232px
+padding: 1px 0px 0px 0px
+joinclub container
+
+fishfarmclub
+color: #000;
+font-family: Raleway;
+font-size: 22px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px; /* 118.182% */
+
+
+color: #F67701;
+font-family: Raleway;
+font-size: 22px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px;
+
+joinclub
+width: 37.309px;
+display: flex
+
+head 
+width: 320px;
+height: 78px;
+flex-shrink: 0;
+the style
+background: #FFF;

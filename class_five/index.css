@@ -9,6 +9,13 @@
     gap: 1rem;
 }
 
+.outer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
 
 
 .inner>img{

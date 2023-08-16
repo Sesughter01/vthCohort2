@@ -1,53 +1,40 @@
 
 
-.grid-container {
+
+
+
+
+
+li{
+    list-style: none;
+   
+}
+.item2 li{ display: inline-block;}
+.item7 li{ display: inline-block;}
+
+.grid-container{
     display: grid;
     grid-template-areas:
-      'mango amala header header header header'
-      'menu main main main right right'
-      ' footer footer footer footer footer footer'
-      'img2 img2 img2 img1 img1 img1';
+    'Header list1 list1 list1 list2 list2'
+    'Sidebar Main Main Main Main Rightmenu'
+    'Footer Footer Footer Footer Footer Footer';
     gap: 10px;
     background-color: #2196F3;
     padding: 10px;
-  }
-  
+}
+
+.item1 { grid-area:Header;}
+.item2 { grid-area:list1;}
+.item7 { grid-area:list2;}
+.item3 { grid-area:Main;}
+.item4 { grid-area:Rightmenu;}
+.item5 { grid-area:Footer;}
+.item6 { grid-area:Sidebar;}
+
+
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
-    font-size: 30px;
-  }
-
-
-
-
-#item1 { 
-    grid-area: header; 
-}
-#item2 {
-     grid-area: menu; 
-    }
-#item3 { 
-    grid-area: main; 
-}
-#item4 {
-     grid-area: right; 
-    }
-#item5 { 
-    grid-area: footer; 
-}
-
-#img1{
-   
-    grid-area: img1; 
-}
-#img2{
-   
-    grid-area: img2; 
-
-}
-.img{
-    /* display: block; */
-    max-width: 100%;
+    font-size: 20px;
 }

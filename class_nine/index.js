@@ -18,23 +18,23 @@ function myFunction(x) {
  
   }
 
-  function displayElements(h,p,hText,pText){
+//   function displayElements(h,p,hText,pText){
      
-   const elementToCreateHeading = document.createElement(h);
-   elementToCreateHeading.className = 'heading';
-   elementToCreateHeading.innerText = hText;
+//    const elementToCreateHeading = document.createElement(h);
+//    elementToCreateHeading.className = 'heading';
+//    elementToCreateHeading.innerText = hText;
 
-   const elementToCreatePragragh = document.createElement(p);
-   elementToCreatePragragh.className = 'para';
-   elementToCreatePragragh.innerText =pText;
+//    const elementToCreatePragragh = document.createElement(p);
+//    elementToCreatePragragh.className = 'para';
+//    elementToCreatePragragh.innerText =pText;
      
-//    paragraph.appendChild("This i;
-   main.append( elementToCreateHeading,elementToCreatePragragh);
-  }
+// //    paragraph.appendChild("This i;
+//    main.append( elementToCreateHeading,elementToCreatePragragh);
+//   }
 
-  function displayTemperature(myTemperature){
-    main.innerHTML = toCelsius(myTemperature)
-  }
+//   function displayTemperature(myTemperature){
+//     main.innerHTML = toCelsius(myTemperature)
+//   }
 
 // Converts Degrees farenheit to Celcius
   function toCelsius(fahrenheit) {
@@ -44,18 +44,18 @@ function myFunction(x) {
   
 //   let num1 =  myVra;
 //   alert(num1)
-  function scopeValue(){
-    let num2 = "Value";
-    let myVra = num2;
+  // function scopeValue(){
+  //   let num2 = "Value";
+  //   let myVra = num2;
 
-    alert("2:" +   myVra)
-  }
+  //   alert("2:" +   myVra)
+  // }
 //   scopeValue();
 //  let num3 = myVra;
 
 //   How to Create  A Javascript Object
 
-const car = {
+const bankAcc = {
     name:'toyota',
     color:'white',
     weight:500

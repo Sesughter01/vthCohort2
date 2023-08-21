@@ -4,30 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
 </head>
 <body>
-    <h2>BANK ACCOUNT</h2>
-
-<p id="demo"></p>
-
-<script>
-// Create an object:
-const person = {
-  firstName: "Mayowa",
-  lastName: "Oyeniran",
-  age: 30,
-  gender: "male",
-  phoneNumber: '09059773535',
-  address: 'magboro gasline',
-  id: '0623',
   
-};
 
+<h1>Bank Account Details</h1>
+ <p id="details"></p>
 
-// Display some data from the object:
-document.getElementById("demo").innerHTML =
-person.firstName + " " + person.lastName + " " + " is a " + person.age + " years old user of the UNITED BANK OF AFRICA";
-</script>
+ <button type="button" onclick="document.getElementById('details').innerHTML = bankAccount.details()">Display Details</button>
+
+<script src="index2.js"></script>
 </body>
 </html>

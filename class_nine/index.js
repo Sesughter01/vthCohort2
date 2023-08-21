@@ -65,20 +65,5 @@ const emptyObj = {};
 console.log(typeof(emptyObj))
 
 
-  // How to create a javascript object= BANK ACCOUNT
-  const person = {
-    lastName: 'oyeniran',
-    firstName: 'mayowa',
-    age: '30',
-    gender: 'male',
-    phoneNumber: '09059773535',
-    address: 'magboro gasline',
-    id: '0623',
-    fullName : function() {
-      return this.firstName + " " + this.lastName;
-    }
-  };
+ 
   
-
-  document.getElementById("demo").innerHTML =
-person.firstName + " is " + person.age + " years old.";

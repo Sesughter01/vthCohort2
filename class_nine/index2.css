@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(194, 194, 231);
+}
+button{
+    color: white;
+    background-color: orange;
+    padding: 10px;
+    border-radius: none;
+    border: none;
+}

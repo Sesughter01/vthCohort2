@@ -8,41 +8,61 @@
 </head>
 <body>
 
-    <!-- BLOCK FORMATTING CONTEXT (BFC) -->
 
-    <header>
-         <h1>Heading</h1>
-    </header>
 
-    <aside class="left">
-        <ul>
-            <li>Dashboard</li>
-            <li>Customers</li>
-            <li>Products</li>
-            <li>Cart</li>
-        </ul>
-    </aside>
+
     
-    <main>
 
-        <div class="box1"></div>
-        <div class="box1"></div>
-        <div class="box1"></div>
-        <div class="box1"></div>
+    
 
-    </main>
-    <aside class="right">
+    <!-- Introduction Javascript -->
 
-        <ol>
-            <li>Trending</li>
-            <li>New Releases</li>
-            <li>Events</li>
-            <li>Newsletter</li>
-        </ol>
-    </aside>
-    <footer class="footer">
-        <h3>Logo</h3>
-        
-    </footer>
+    <!-- Javascript Can Change HTML Content -->
+ <div class="change_html_content">
+     <h2>What Can JavaScript Do?</h2>
+ 
+      <p id="demo">JavaScript can change HTML content.</p>
+ 
+     <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Super Eagles!</button> <!--Inline Javascript-->
+     
+
+ </div>
+
+ <div class="change_attr_values">
+    
+        <p>JavaScript can change HTML attribute values.</p>
+
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+        <button onclick="document.getElementById('myImage').src='../assets/pic_bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="../assets/pic_bulboff.gif" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src='../assets/pic_bulboff.gif'">Turn off the light</button>
+ </div>
+
+
+ <div class="change_style_values">
+
+    <p>Welcome to Javascript</p>
+
+    <p id="sent">Hello Javascript</p>
+
+    <button onclick="document.getElementById('sent').style.fontSize='50px'">Change</button>
+
+    <img src="/assets/tables.png" alt="">
+  </div>  
+
+
+ <div class="myDom">
+    <img src="../assets/My DOM 1.png" alt="" srcset="">
+ </div>
+
+ <script >
+         let doc = document.body.querySelector('div').style.backgroundColor="red";
+ </script>
+    
+
+
 </body>
 </html>

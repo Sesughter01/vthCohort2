@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+
+    height: 100vh;
+
+}
+
+
+header{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    /* margin-inline:auto ; */
+
+
+}
+
+.header_navbar{
+    margin-inline-end: 2rem;
+    margin-inline-start: auto;
+}
+.header_navbar .header_navabar_list{
+      display: flex;
+      
+}
+.header_navbar .header_navabar_list .header_navbar_item{
+   margin-inline:2rem;
+}
+
+.regLog{
+    margin-inline-end: 1rem;
+    margin-inline-start: auto;
+}
+
+
+
+
+.heading{
+    background: #c71010;
+    width: 200px;
+    height: 100px;
+    color: aliceblue;
+}
+.para{
+    background: #1610c7;
+    width: 200px;
+    height: 100px;
+    color: aliceblue;
+}
+
+.controlButtons{
+    margin-block-start: 4rem;
+   margin-inline: auto;
+}
+.controlButtons button{
+    background-color: burlywood;
+    padding: 1rem 2rem ;
+    margin-block: 1rem;
+    display: block;
+   margin-inline: auto;
+}

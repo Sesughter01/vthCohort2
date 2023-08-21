@@ -5,7 +5,7 @@
     balance: 5000,
     currency: 'NGN',
     details(){
-        return "Account name:" + this.accountHolder + " Account Number:"+ this.accountNumber + " Account Balance: "+ this.balance + " Currency:" + this.currency;
+        return "Account Name: " + this.accountHolder + "<br> Account Number: "  + this.accountNumber + "<br> Account Balance: "+ this.balance + "<br> Currency: " + this.currency;
         
     }
     

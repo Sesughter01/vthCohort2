@@ -65,4 +65,16 @@ const emptyObj = {};
 console.log(typeof(emptyObj))
 
 
+const bankAccount = {
+  Firstname: 'Victor',
+  LastName: 'Herald',
+  age: '22',
+}
+
+document.getElementById('demo') .innerHTML =
+bankAccount.Firstname + bankAccount.LastName + "is a" + bankAccount.age
++ "years old user.";
+
+
+
   

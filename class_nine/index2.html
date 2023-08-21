@@ -4,30 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/class_nine/style2.css">
 </head>
 <body>
     <h1>Bank account</h1>
 
-    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <button type="button" onclick="document.getElementById('demo2').innerHTML= bankAccount.demo2()">View Details</button>
     
-    <script>
-        const bankAccount = {
-            Firstname: 'Victor',
-            LastName: 'Herald',
-            age: '22',
-            number: '1218',
-            openedOn: '31st July 2004',
-            expiresOn: '1st may 2069',
-          }
+ <script src="index2.js"></script>
+
           
-          document.getElementById('demo') .innerHTML =
-          bankAccount.Firstname + bankAccount.LastName + " is a " + bankAccount.age
-          + " years old user. ";
+
+
 
          
-        </script>
-
-      
 
 </body>
 </html>

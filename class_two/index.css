@@ -87,6 +87,9 @@ h1{
     border: none;
 }
 
+footer{
+    margin-top: 100px;
+}
 .subsection{
     display: flex;
     /* margin-top: 100px; */

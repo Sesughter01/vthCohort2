@@ -86,3 +86,20 @@ h1{
     padding: 20px;
     border: none;
 }
+
+.subsection{
+    display: flex;
+    /* margin-top: 100px; */
+}
+
+.image1{
+    display: flex;
+}
+.image1 p{
+    width: 100%;
+}
+
+.bold{
+    color: red;
+    font-weight:900 ;
+}

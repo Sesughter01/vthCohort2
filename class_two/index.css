@@ -17,7 +17,7 @@ body{
 header{
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    gap:680px;
     padding-bottom: 50px;
 }
 
@@ -26,6 +26,7 @@ header .navlist a{
     justify-content: space-between;
     list-style: none;
     text-decoration: none;
+    text-align: right;
 }
 
 .contain1{
@@ -102,17 +103,9 @@ header .navlist a{
     gap: 70px;
 }
 
-.footer {
+.footer1{
     display: flex;
-}
-
-.footer2{
-   display: flex;
-   flex-direction: column;
-}
-
-.footer3{
-    display: flex;
+    gap:50px;
 }
 
 
@@ -129,9 +122,8 @@ header .navlist a{
 
 
 
-nav{
-    /* background-color: brown; */
-}
+
+
 
  header img{
    

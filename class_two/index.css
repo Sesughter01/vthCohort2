@@ -8,10 +8,126 @@
 /* Element name selectors use the name of the element as the selector */
 
 body{
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    border: 3px solid red;
+   margin: 120px 120px; 
+   font-family: sans-serif;
+} 
+
+
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
 }
+
+header .navlist a{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+}
+
+.contain1{
+    display: flex;
+    flex-direction: column;
+}
+.side1{
+    flex-direction: column;
+    padding: 10px;
+    gap:50px;
+    font-size: 20px;
+}
+
+.contain3{
+    display: flex;
+    align-items: center;
+    gap:100px;
+    margin-bottom: 40px;
+}
+
+.contain3 p{
+    font-size: 20px;
+}
+
+#body2 .btn1{
+    background-color: red;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 15px 3px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+#body2{
+    display: flex;
+    flex-direction: column;
+}
+.section1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 .side1{
+     height: 530px;
+     width: 400px;
+     padding: 30px 30px;
+}
+.style1 h6{
+    font-weight: lighter;
+}
+.contain2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+
+.logo{
+    width: 60px;
+    height:30px;
+}
+
+ .navlist a{
+    list-style: none;
+    margin-inline: 2rem;
+}
+
+.section2{
+    display: flex;
+    gap: 70px;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer2{
+   display: flex;
+   flex-direction: column;
+}
+
+.footer3{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 nav{
     /* background-color: brown; */
@@ -22,9 +138,7 @@ nav{
  width: 200px;
 }
 
-p{
-    background-color: darkgoldenrod;
-}
+
 
 /* id selector is used to uniquely identify an element*/
 
@@ -58,10 +172,7 @@ p{
     background-color: blue;
  }
 
- ul li{
-    list-style: none;
-    margin-inline: 2rem;
-}
+
 
 /* Sibling */
 

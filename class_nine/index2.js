@@ -9,7 +9,7 @@ const BankAcc = {
     AccountBal: 'NGN2000',
 
 
-customer(){
+ customer(){
     return "Customer Name:" + BankAcc.AccName + " " + "<br>Customer PhoneNumber:" + BankAcc.PhoneNumber +
     "<br>Customer address:" + BankAcc.HouseAddress +
     "<br>Customer account type:" + BankAcc.TypeOfBankAcc + "<br>Customer occupation:" + BankAcc.Occupation + 

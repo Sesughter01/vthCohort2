@@ -1,0 +1,222 @@
+/********************************/
+/* Formatting framework */
+/********************************/
+
+/* general text and form text */
+
+.design-inverted .section-text-color-1:not(#top) .mz_editable .moze-wysiwyg-editor,
+.design-inverted .section-text-color-1 .mz_editable .moze-wysiwyg-editor h1,
+.design-inverted .section-text-color-1 .mz_editable .moze-wysiwyg-editor h2,
+.design-inverted .section-text-color-1 .mz_editable .moze-wysiwyg-editor h3,
+.design-inverted .section-text-color-1 .moze-form * {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+/* store items */
+
+.design-inverted .section-text-color-1 .cat-thumb-title,
+.design-inverted .section-text-color-1 .cat-thumb-price {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+/* links */
+
+.design-inverted .section-text-color-1 .mz_editable .moze-wysiwyg-editor a:not(.moze-button-large):not(.moze-button) {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* important text */
+
+.design-inverted .section-text-color-1 .mz_editable .moze-important {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.95);
+}
+
+.design-inverted .section:not(.section-text-color-1) .mz_editable .moze-important {
+    background-color: rgba(255, 255, 255, 0.17);
+    color: #FFFFFF;
+}
+
+/* code - for dark background */
+
+.design-inverted .section:not(.section-text-color-1) .mz_editable .moze-code {
+    background-color: rgba(255, 255, 255, 0.17);
+}
+
+.design-inverted .section-text-color-1 .mz_editable .moze-code {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* tables - for dark background  */
+
+body:not(.design-inverted) .section-text-color-1 .mz_editable table td,
+.design-inverted .mz_editable table td {
+    border-color: rgba(255, 255, 255, 0.1);
+
+}
+
+body:not(.design-inverted) .section-text-color-1 .mz_editable table .moze-th,
+.design-inverted .mz_editable table .moze-th {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.design-inverted .section-text-color-1 .mz_editable table td {
+    border-color: rgba(0, 0, 0, 0.15);
+
+}
+
+.design-inverted .section-text-color-1 .mz_editable table .moze-th {
+    color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+
+/********************************/
+/* Form */
+/********************************/
+
+/* forms - for light background */
+
+.design-inverted .section-text-color-1 .moze-form input,
+.design-inverted .section-text-color-1 .moze-form textarea,
+.design-inverted .section-text-color-1 .moze-form select {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.design-inverted .section-text-color-1 .moze-form option {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+/********************************/
+/* Catalog */
+/********************************/
+
+/* Scrollbars for Chromium */
+
+.design-inverted .sliding-panel-body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.design-inverted .sliding-panel-body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/********************************/
+/* Buttons */
+/********************************/
+
+/* btn-alt-light */
+
+.moze-button-large.btn-alt-light,
+.moze-button-large.btn-alt-light:hover {
+    color: #FFFFFF;
+    border-color: #447CE4;
+}
+
+.moze-button-large.btn-alt-light:hover {
+    color: #FFFFFF;
+    border-color: #333333;
+}
+
+/* btn-alt-white */
+
+.moze-button-large.btn-alt-white,
+.moze-button-large.btn-alt-white:hover {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.moze-button-large.btn-alt-white:hover,
+.moze-button-large.btn-alt-light:hover {
+    opacity: 0.70;
+}
+
+/* btn-white and btn-alt-dark */
+
+.moze-button-large.btn-white,
+.moze-button-large.btn-white:hover {
+    background-color: #FFFFFF;
+    color: #222222;
+}
+
+.moze-button-large.btn-alt-dark,
+.moze-button-large.btn-alt-dark:hover {
+    background-color: #447CE4;
+    color: #FFFFFF;
+}
+
+.moze-button-large.btn-white:hover,
+.moze-button-large.btn-alt-dark:hover {
+    opacity: 0.8;
+}
+
+/* buttons - for light background */
+
+.design-inverted .section-text-color-1 .mz_editable .moze-formbutton,
+.design-inverted .section-text-color-1 .mz_editable .moze-button,
+.design-inverted .section-text-color-1 .mz_editable .moze-button-large:not([class*="btn-"]) {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #FFFFFF;
+}
+
+.design-inverted .section-text-color-1 .mz_editable .moze-button.btn-alt,
+.design-inverted .section-text-color-1 .mz_editable .moze-button-large.btn-alt {
+    color: rgba(0, 0, 0, 0.75);
+    background: transparent;
+}
+
+.section-text-color-1 .mz_editable .moze-button-large:not(.btn-white):not(.btn-alt-white):not(.btn-alt-light):not(.btn-alt-dark):hover {
+    opacity: 0.8;
+}
+
+/* default button sizings */
+
+.moze-button-large.btn-alt-white,
+.moze-button-large.btn-alt-light {
+    padding-top: 0.76em;
+    padding-bottom: 0.76em;
+}
+
+.moze-button-large.btn-alt-white,
+.moze-button-large.btn-alt-light {
+    border-width: 2px;
+    border-style: solid;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+}
+
+.moze-button-large.btn-alt-white:hover,
+.moze-button-large.btn-alt-light:hover {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+}
+
+/********************************/
+/* Header, title, toptext, languages */
+/********************************/
+
+#shopicons {
+    display: none;
+}
+
+#top:not(.sticky.is-fat):not(.sticky.is-semifat) ~ div #shopbar {
+    visibility: visible;
+}
+
+/********************************/
+/* Menu Bones */
+/********************************/
+
+
+
+/********************************/
+/* Catalog */
+/********************************/
+
+#shopbar {
+    border-radius: 6px;
+}

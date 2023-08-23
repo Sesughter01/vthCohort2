@@ -1,111 +1,90 @@
 *{
     padding: 0;
-    margin: 20px;
+    margin: 0;
     box-sizing: border-box;
 }
+
+/* .overall{
+    max-width: 1440px;
+    margin-left: 70px;
+    
+} */
+
 
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
 }
 
-.div1{
+ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.navlist{
     display: flex;
-     justify-content: space-between;
-}
-.navlist a{
-        gap: 10px;
-        text-align: center;
-        text-decoration: none;
-        list-style: none;
-        text-decoration: none;
-        color: black
+    gap: 30px;
 }
 
-.list{
+.list li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+
+.container{
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
-
-.div2{
-    height: 10px;
-    width: 20x;
-}
-
-section{
-    display: flex;
-    justify-content: space-between;
-}
-.class{
-    background-color: black;
-    color: rgba(245, 245, 245, 0.877);
-
-}
-
-.B{
-    background-color: red
-
-}
-.mainlogo{
-    height: 400px;
-    width: 1000px;
-}
-
-.box{
-    background-color: black;
-    height: 600px;
-    color: rgb(237, 237, 243);
-
-}
-.New{
-    color: rgb(159, 187, 106);
-}
-
-.the{
-    color: rgb(147, 172, 103);
-}
-
-.paragraghs{
-    display: flex;
-}
-
-.head{
-    font-size: 50px;
+.container img{
     width: 100%;
 }
 
+
 .subsection{
     display: flex;
-    /* margin-top: 100px; */
+}
+.box{
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+.overall{
+    margin: 0 60px;
+}
+
+.intro-text{
+    display: flex;
+    gap: 300px;
+    
+}
+.intro-text h1{
+    font-size: 3rem;
+    width: 100%;
+    
+}
+.intro-text p{
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+button{
+    width: 130px;
+    height: 30px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.the{
+    margin-bottom: 30px;
 }
 
 .image1{
     display: flex;
-}
-.image1 p{
-    width: 100%;
-}
-
-.picture{
-    height: 200px;
-    width: 200px;
-}
-
-.B{
-    background-color: black;
-    color:white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 12px;
-    padding-left: 12px;
-}
-
-.red{
-    color: red;
-    font-weight:900 ;
-}
-
-.bold{
-    color: black;
-    font-weight:900 ;
+    align-items: center;
 }

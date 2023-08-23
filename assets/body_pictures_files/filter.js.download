@@ -1,0 +1,510 @@
+/**
+ * Mozello Catalog Filter Actions
+ */
+function mozCatalogFilter()
+{
+    this.catalogMaxChecksPerOptionFilter = 20;
+
+    this.initSort();
+    this.initFilter();
+
+    this.doUpdateFilteredProductsCount();
+}
+
+/*** Sort ***/
+
+mozCatalogFilter.prototype.initSort = function()
+{
+    var base = this;
+
+    $('#cat-nav .cat-sort')
+        .off()
+        .on('change', function() {
+            base.doSortOrFilter('sort');
+        });
+}
+
+/*** Filter ***/
+
+mozCatalogFilter.prototype.initFilter = function()
+{
+    var base = this;
+    var filterPanel = $('#cat-filter');
+
+    // Add opening and close logic.
+
+    menuAddOpenerLogic('#cat-filter', $('.cat-filter-toggle'));
+    $('#cat-filter-close').on('click', function () {
+        filterPanel.hide().removeClass('visible');
+    });
+
+    // Load icons inline.
+
+    loadInlineSvg('.cat-filter-toggle img, #cat-filter button img');
+
+    // Set colors.
+
+    var foregroundColor = getElementColor($('.cat-filter-toggle div'), 'color');
+    setSlidingPanelColors(foregroundColor);
+
+    // Build filters.
+
+    this.buildFilters();
+
+    // Adds filter reset logics.
+
+    $('#cat-filter-reset')
+        .off()
+        .on('click', function() {
+            base.resetCurrentFilterValues();
+        });
+
+    this.toggleFilterResetVisibility();
+}
+
+mozCatalogFilter.prototype.toggleFilterResetVisibility = function()
+{
+    var filterValues = this.getCurrentFilterValues();
+    $('#cat-filter-reset').toggle(Array.isArray(filterValues) && filterValues.length > 0);
+}
+
+mozCatalogFilter.prototype.buildFilters = function()
+{
+    var base = this;
+    var container = $('#cat-filter-base');
+
+    if (container.length != 1 || typeof mozCatFilters == undefined) {
+        return;
+    }
+
+    container.find('form.moze-form').html('');
+
+    $.each(mozCatFilters.common, function(key, filter) {
+        var html = '';
+        if (filter.control == 'slider') {
+            html = base._buildFilterSliderCtrl(filter);
+        }
+        if (filter.control == 'checkboxes') {
+            html = base._buildFilterCheckboxesCtrl(filter, 'common');
+        }
+        if (html) {
+            html.addClass('common');
+            container.find('form.moze-form').append(html);
+        }
+    });
+
+    $.each(mozCatFilters.options, function(key, filter) {
+        var html = '';
+        if (filter.control == 'checkboxes') {
+            html = base._buildFilterCheckboxesCtrl(filter, 'options');
+        }
+        if (html) {
+            html.addClass('options');
+            container.find('form.moze-form').append(html);
+            var firstInputInGroup = html.find('input[type="checkbox"]').first();
+            if (firstInputInGroup.length) {
+                base.doRestrictCheckboxesChecked(firstInputInGroup);
+            }
+        }
+    });
+
+    base.countTotalFiltersSet();
+}
+
+mozCatalogFilter.prototype._buildFilterSliderCtrl = function(filter)
+{
+    var base = this;
+
+    var filterGroup = $('<div>', { class: 'cat-filter-group' })
+        .attr('data-type', filter.control)
+        .attr('data-name', filter.name);
+
+    var caption = $('<h3>').html(filter.caption);
+    filterGroup.append(caption);
+
+    var slider = $('<div>', { class: 'moze-filter-slider', style: 'margin: 65px 14px 40px 14px' });
+    filterGroup.append(slider);
+
+    noUiSlider.create(slider[0], {
+        start: [
+            filter.value_min,
+            filter.value_max
+        ],
+        connect: true,
+        step: 1,
+        tooltips: true,
+        range: {
+            min: filter.control_min,
+            max: filter.control_max
+        },
+        margin: (filter.control_max - filter.control_min <= 100) ? 1 : 10
+    });
+
+    slider[0].noUiSlider.on('end', function() {
+        base.doSortOrFilter('filter');
+        // base.doUpdateFilteredProductsCount();
+    });
+
+    return filterGroup;
+}
+
+mozCatalogFilter.prototype._buildFilterCheckboxesCtrl = function(filter, filterType)
+{
+    var base = this;
+
+    var filterGroup = $('<div>', { class: 'cat-filter-group' })
+        .attr('data-type', filter.control)
+        .attr('data-name', filter.name);
+
+    var caption = $('<h3>').html(filter.caption);
+    filterGroup.append(caption);
+
+    $.each(filter.options, function(key, option) {
+        var label = $('<label>', { class: 'moze-checkbox' });
+        var inputName = option.key ? option.key : option.caption;
+        var input = $('<input>', { type: 'checkbox', name: inputName, value: 1, checked: option.value == 1 });
+        input.on('click', function () {
+            base.doSortOrFilter('filter');
+        });
+        if (filterType == 'options') {
+            input.on('click', function() {
+                base.doRestrictCheckboxesChecked($(input));
+            });
+        }
+        // input.on('click', function() {
+        //     base.doUpdateFilteredProductsCount();
+        // });
+        label.append(input);
+        label.append(document.createTextNode(option.caption));
+        filterGroup.append(label);
+        filterGroup.append($('<br>'));
+    });
+
+    return filterGroup;
+}
+
+mozCatalogFilter.prototype.countTotalFiltersSet = function()
+{
+    var total = 0;
+    var filterGroups = $('#cat-filter-base .cat-filter-group');
+
+    total += filterGroups.find('input[type="checkbox"]:checked').length;
+
+    filterGroups.find('.moze-filter-slider').each(function() {
+        var slider = $(this)[0].noUiSlider;
+        if (slider.get(true)[0] > slider.options.range.min || slider.get(true)[1] < slider.options.range.max) {
+            total++;
+        }
+    });
+
+    return total;
+}
+
+mozCatalogFilter.prototype.getCurrentFilterValues = function()
+{
+    var result = [];
+
+    var filterGroups = $('#cat-filter-base .cat-filter-group');
+    filterGroups.each(function(key, value) {
+
+        var name = $(this).attr('data-name');
+        var type = $(this).attr('data-type');
+        var source = $(this).hasClass('common') ? 'common' : 'options';
+
+        switch (type) {
+            case 'slider':
+                var slider = $(this).find('.moze-filter-slider');
+                if (slider.length) {
+                    var sliderValues = slider[0].noUiSlider.get(true);
+                    var sliderOptions = slider[0].noUiSlider.options;
+                    var values = [
+                        sliderValues[0] > sliderOptions.range.min ? sliderValues[0] : null,
+                        sliderValues[1] < sliderOptions.range.max ? sliderValues[1] : null
+                    ];
+                }
+                else {
+                    var values = [null, null];
+                }
+                if (values[0]) {
+                    result.push({
+                        key: name + '_min',
+                        value: Math.round(values[0] * 100) / 100,
+                        source: source
+                    });
+                }
+                if (values[1]) {
+                    result.push({
+                        key: name + '_max',
+                        value: Math.round(values[1] * 100) / 100,
+                        source: source
+                    });
+                }
+                break;
+
+            case 'checkboxes':
+                var checkboxes = $(this).find('input[type="checkbox"][name]');
+                var values = [];
+                $.each(checkboxes, function() {
+                    if ($(this).is(':checked')) {
+                        values.push($(this).attr('name'));
+                    }
+                });
+                if (values.length > 0) {
+                    result.push({
+                        key: name,
+                        value: values,
+                        source: source
+                    });
+                }
+                break;
+        }
+    });
+
+    return result;
+}
+
+mozCatalogFilter.prototype.resetCurrentFilterValues = function()
+{
+    var base = this;
+    var reset = false;
+
+    var filterGroups = $('#cat-filter-base .cat-filter-group');
+    filterGroups.each(function(key, value) {
+
+        var name = $(this).attr('data-name');
+        var type = $(this).attr('data-type');
+
+        switch (type) {
+            case 'slider':
+                var slider = $(this).find('.moze-filter-slider');
+                if (slider.length) {
+                    var sliderValues = slider[0].noUiSlider.get(true);
+                    var sliderOptions = slider[0].noUiSlider.options;
+                    var values = [
+                        sliderValues[0] > sliderOptions.range.min ? sliderValues[0] : null,
+                        sliderValues[1] < sliderOptions.range.max ? sliderValues[1] : null
+                    ];
+                    if (values[0] || values[1]) {
+                        slider[0].noUiSlider.set([sliderOptions.range.min, sliderOptions.range.max]);
+                        reset = true;
+                    }
+                }
+                break;
+
+            case 'checkboxes':
+                var checkboxes = $(this).find('input[type="checkbox"][name]');
+                if (checkboxes.length) {
+                    $.each(checkboxes, function () {
+                        if ($(this).is(':checked')) {
+                            $(this).prop('checked', false);
+                            reset = true;
+                        }
+                    });
+                }
+                break;
+        }
+    });
+
+    if (reset) {
+        base.doSortOrFilter('filter');
+    }
+
+    this.toggleFilterResetVisibility();
+}
+
+/*** Events ***/
+
+mozCatalogFilter.prototype.doUpdateFilteredProductsCount = function()
+{
+    var countTotalFiltersSet = this.countTotalFiltersSet();
+
+    if (countTotalFiltersSet > 0) {
+        var countCatItems = $('.mz_component.mz_catalog .cat-grid .cat-thumb').length;
+        $('#cat-nav .cat-filter-toggle .counter').show();
+        $('#cat-nav .cat-filter-toggle .counter span').html(countCatItems);
+    }
+    else {
+        $('#cat-nav .cat-filter-toggle .counter').hide();
+        $('#cat-nav .cat-filter-toggle .counter span').html('');
+    }
+}
+
+mozCatalogFilter.prototype.doRestrictCheckboxesChecked = function(sender)
+{
+    var optionFilterGroup = $(sender).parents('.cat-filter-group.options');
+
+    if (!optionFilterGroup.length) {
+        return;
+    }
+
+    var inputsChecked = optionFilterGroup.find('input[type="checkbox"]:checked'),
+        inputsUnchecked = optionFilterGroup.find('input[type="checkbox"]:not(:checked)');
+
+    if ((inputsChecked.length >= this.catalogMaxChecksPerOptionFilter)) {
+        inputsUnchecked.attr('disabled', true).attr('checked', false);
+    }
+    else {
+        inputsUnchecked.attr('disabled', false);
+    }
+}
+
+mozCatalogFilter.prototype.doSortOrFilter = function(origin)
+{
+    var base = this;
+
+    var url = new URL(window.location),
+        newSortValue = $('#cat-nav .cat-sort select option:selected').val(),
+        newOptionFilterValues = this.getCurrentFilterValues();
+
+    // Replace the sort parameter, leave everything else.
+
+    if (origin == 'sort') {
+        url.searchParams.set('sort', newSortValue);
+    }
+
+    // Keep the sort parameter, replace everything else.
+
+    if (origin == 'filter') {
+
+        var optionNamePrefix = 'o';
+        var optionValuePrefix = 'v';
+
+        var paramNamesToDelete = [];
+        var paramRegexNamesToDelete = [
+            /(availability)|(price_min)|(price_max)|(brand)/,
+            /o[0-9]+/,
+            /v[0-9]+(\[\])?/
+        ];
+
+        for (var pair of url.searchParams.entries()) {
+            for (var regex of paramRegexNamesToDelete) {
+                if (pair[0].match(regex)) {
+                    paramNamesToDelete.push(pair[0]);
+                    continue;
+                }
+            }
+        }
+
+        for (var name of paramNamesToDelete) {
+            url.searchParams.delete(name);
+        }
+
+        for (var pair of newOptionFilterValues) {
+            if (pair.source == 'options') {
+                continue;
+            }
+            if (Array.isArray(pair.value)) {
+                for (var value of pair.value) {
+                    url.searchParams.append(pair.key + '[]', value);
+                }
+            }
+            else {
+                url.searchParams.set(pair.key, pair.value);
+            }
+        }
+
+        var index = 1;
+        for (var pair of newOptionFilterValues) {
+            if (pair.source == 'common') {
+                continue;
+            }
+            url.searchParams.set(optionNamePrefix + index, pair.key);
+            if (Array.isArray(pair.value)) {
+                for (var value of pair.value) {
+                    url.searchParams.append(optionValuePrefix + index + '[]', value);
+                }
+            }
+            else {
+                url.searchParams.set(optionValuePrefix + index, pair.value);
+            }
+            index++;
+        }
+    }
+
+    // Refreshes the list view.
+
+    new mozLive3({
+        source: {
+            name: 'maincatalog',
+            superglobal: 1
+        },
+        action: 'catalog-list-view-refresh',
+        parameters: {
+            host: url.host,
+            pathname: url.pathname,
+            search: url.search
+        },
+        response: {
+            callback: [
+                function (response) {
+
+                    if (response.success) {
+
+                        var parser = new DOMParser(),
+                            newDocument = parser.parseFromString(response.html, 'text/html'),
+                            newCatalog = $(newDocument).find('.mz_component.mz_catalog'),
+                            newCatalogGrid = newCatalog.find('.cat-grid');
+
+                        $('.mz_component.mz_catalog .cat-grid').replaceWith(newCatalogGrid);
+
+                        base.doUpdateFilteredProductsCount();
+                        base.fixCatImages();
+
+                        reinitMozCatalogCartActions();
+                        base.toggleFilterResetVisibility();
+
+                        window.history.replaceState({ path: url.toString() }, '', url.toString());
+                    }
+                    else {
+                        window.location = url;
+                    }
+                }
+            ]
+        }
+    });
+}
+
+/*** Helpers ***/
+
+mozCatalogFilter.prototype.fixThumbnailImageLayout = function()
+{
+    if (typeof fixThumbnailImageLayout !== 'function') {
+        return;
+    }
+
+    $('.mz_catalog .cat-thumb-pic img:not([data-slot-type="no-product"])')
+        .hide()
+        .one('load', function() {
+            fixThumbnailImageLayout(this);
+            $(this).show();
+        })
+        .each(function() {
+            if (this.complete && typeof $(this).attr('src') != 'undefined') {
+                $(this).trigger('load');
+            }
+        });
+}
+
+mozCatalogFilter.prototype.fixCatImages = function()
+{
+    // Re-initializes the $.fn.unveil() plugin which lazy loads catalog item images.
+
+    if (typeof $.fn.unveil == 'function') {
+        $(".cat-thumb-pic img").unveil(300);
+    }
+
+    this.fixThumbnailImageLayout();
+}
+
+/*** Initialization ***/
+
+function reinitMozCatalogFilterActions()
+{
+    new mozCatalogFilter();
+}
+
+$(document).ready(function() {
+    reinitMozCatalogFilterActions();
+});
+
+/*** End ***/

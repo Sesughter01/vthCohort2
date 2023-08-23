@@ -1,0 +1,7 @@
+if (typeof mozLocalization == 'undefined') {
+	var mozLocalization = {};
+}
+mozLocalization['cmCatalogCartAdd'] = "Add to cart";
+mozLocalization['cmCatalogCartAdded'] = "Item added to cart";
+mozLocalization['cmCatalogCartView'] = "View";
+mozLocalization['erInMaintenanceMode'] = "We can not process your request right now, due to a planned maintenance. Please try again later.";

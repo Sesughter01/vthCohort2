@@ -1,0 +1,292 @@
+/*** layout ***/
+
+body {
+    background-color: #EEEEEE;
+}
+
+#top {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid;
+    border-color: #F5F5F5;
+}
+
+#title {
+    margin: 14px 0px;
+}
+
+#title .mz_wysiwyg {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
+    color: #383838;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1;
+}
+
+#toptext .mz_wysiwyg * {
+    color: #999999;
+}
+
+#wrap {
+    background-color: #FFFFFF
+}
+
+#bottom .mz_wysiwyg {
+    color: #666666;
+}
+
+#bottom a {
+    color: #4C92DA;
+}
+
+#bottom .mz_social a {
+    fill: #4C92DA;
+}
+
+#bottom a:hover {
+    color: #999999;
+}
+
+/* section colors */
+
+.section-bg-1 {
+    background-color: #f6f7f9;
+}
+
+.section-bg-2 {
+    background-color: #4c92da;
+}
+
+.section-bg-3 {
+    background-color: #3c424f;
+}
+
+/* language select */
+
+#languages li > a {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #CCCCCC;
+    min-width: 32px;
+    line-height: 32px;
+    display: inline-block;
+    border-radius: 32px;
+}
+
+#languages li.selected > a,
+#languages li > a:hover {
+    color: #FFFFFF;
+    background-color: #CCCCCC;
+}
+
+/* menu */
+
+#menu > ul > li {
+    margin: 0px 2px;
+}
+
+#menu > ul > li > a {
+    margin: 0px 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #999999;
+    padding: 8px 14px;
+}
+
+#menu > ul > li.selected > a, #menu > ul > li > a:hover {
+    color: #292929;
+}
+
+#menu ul li a {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+
+#menu ul ul {
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid;
+    border-color: #EEEEEE;
+}
+
+#menu ul ul li {
+    border-bottom: 1px solid;
+    border-radius: 0px;
+    border-color: #EEEEEE;
+}
+
+#menu ul ul li:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#menu ul ul li:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#menu ul ul li:hover {
+    background-color: #F5F5F5;
+}
+
+#menu ul ul li a, #menu ul ul li a:hover, #menu ul ul li.selected > a {
+    color: #999999;
+}
+
+#menu {
+    margin: 12px 0px;
+    margin-left: -14px;
+    margin-right: -14px;
+}
+
+/* submenu */
+
+#submenubox {
+    background-color: #EEEEEE
+}
+
+#submenu a {
+    font-weight: 300;
+    color: #999999;
+    border-radius: 3px;
+}
+
+#submenu li.selected > a,
+#submenu li:hover > a {
+    background-color: #FFFFFF;
+    color: #292929;
+}
+
+/* special boxes - bigbar */
+
+#bigbar {
+    margin: 0px;
+    max-width: 100%;
+    position: relative;
+}
+
+#bigbar div.mz_banner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+#bigbar div.moze-banner {
+    background-position: center center;
+    background-size: cover;
+}
+
+#bigbar-container {
+    position: relative;
+}
+
+#bigbar-colorizer {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bigbar-overlay-container {
+    padding: 180px 20px;
+}
+
+.bigbar-overlay-container:not([class*="overlay-align-"]) {
+    align-items: center;
+    text-align: center;
+}
+
+.bigbar-overlay-container.overlay-with-buttons {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#bigbar-overlay {
+    min-height: 60px;
+}
+
+.bigbar-h1 .mz_wysiwyg {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 4.63rem;
+    margin: 0px 0px 20px 0px;
+    color: #FFFFFF;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 751px) {
+
+    .overlay-align-left .bigbar-h1 .mz_wysiwyg,
+    .overlay-align-right .bigbar-h1 .mz_wysiwyg {
+        font-size: 3.6rem;
+    }
+
+}
+
+.bigbar-h2 .mz_wysiwyg {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#bigbar .mz_editable h1 {
+    margin: 0px;
+    color: #FFFFFF;
+}
+#bigbar .mz_editable p {
+    color: #FFFFFF;
+}
+
+/* special boxes - sidebar */
+
+#sidebar h2 {
+    font-size: 1.3rem;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 15px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 750px) {
+
+    #menu {
+        margin: 0px 0px 5px 0px;
+    }
+
+    #title .mz_wysiwyg {
+        margin-top: 20px;
+    }
+
+    .bigbar-h1 .mz_wysiwyg  {
+        font-size: 2.94rem;
+        margin-bottom: 0.94rem;
+    }
+
+    #bigbar-overlay {
+        margin: 0px !important;
+        padding: 0;
+    }
+
+    #bigbar br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bigbar-h1 .mz_wysiwyg {
+        font-size: 2.4rem;
+    }
+}

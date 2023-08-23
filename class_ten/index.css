@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+div{
+    background-color: black;
+    border: yellow;
+    color: white;
+    font-size: 2rem;
+    height: 150px;
+    width: 350px;
+    padding: 1rem;
+}

@@ -16,7 +16,7 @@ const Bankaccount = {
 }
 document.getElementById("btn").addEventListener('click', ()=>{
      var d = document.getElementById("display").innerHTML = Bankaccount.display();
-     d = " "
+     
 
 
  })

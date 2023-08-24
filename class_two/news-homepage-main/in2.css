@@ -1,0 +1,18 @@
+.maincontainer{
+    background-color: hsl(36, 100%, 99%);
+}
+
+.mainHeader{
+    display:flex;
+}
+.navlist{
+    display:inline-flex;
+}
+.NavListItem{
+    list-style-type: none;
+}
+
+
+.container{
+    display: flex;
+}

@@ -36,7 +36,7 @@ font-family: 'Hanken Grotesk', sans-serif;
 font-family: 'Inter', sans-serif;
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500&family=Inter:wght@400;700;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500&family=Inter:wght@400;700;800&display=swap')
 
 The Bright Future of Web 3.0?
 
@@ -67,3 +67,30 @@ The Bright Future of Web 3.0?
   03
   The Growth of Gaming
   How the pandemic has sparked fresh opportunities.
+  <div class="containerTwo"></div>
+          
+          <div class="containerThree"></div>
+
+          <div class="boxOne">
+                  <h2 id="vcFunds">Is VC Funding Drying Up?</h2>
+                  <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                  </p>
+                </div>
+
+    
+                <div class="boxOne">
+                  <h2 id="down">The Downsides of AI Artistry</h2>
+                  <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                </div>
+
+
+  <div class="container2">
+                <div class="boxOne">
+                  <p>
+                    <h1 id="orange">New</h1> 
+                      <h2>Hydrogen VS Electric Cars</h2>
+                    <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </div>
+               <div class="containerThree">
+
+          </div>

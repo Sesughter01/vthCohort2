@@ -1,18 +1,112 @@
-.maincontainer{
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500&family=Inter:wght@400;700;800&display=swap');
+
+body{
     background-color: hsl(36, 100%, 99%);
+} 
+
+
+
+
+.maincontainer{
+    /* margin-inline: 40px; */
 }
 
 .mainHeader{
     display:flex;
+    justify-content: space-between;
 }
 .navlist{
-    display:inline-flex;
+    display:flex;
+    gap:50px;
+    font-family:'Inter', sans-serif;
+    /* color: hsl(233, 8%, 79%); */
+    
 }
+
 .NavListItem{
     list-style-type: none;
 }
-
-
 .container{
     display: flex;
+    gap: 30px;
+    
+ 
+}
+.side-a{
+    width: 70%;
+}
+.side-a img{
+    width: 100%;
+}
+.flex{
+    display: flex;
+    gap: 25px;
+}
+
+
+.side-b{
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding-left: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+#orange{
+    color: hsl(35, 77%, 62%);
+}
+
+#We{
+    margin-top: 30px;
+    font-family: 'Inter', sans-serif;
+    color:hsl(236, 13%, 42%);
+    line-height: 1.5;
+}
+
+.side-b{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    /* line-height: 3; */
+    
+}
+
+.dry{
+    line-height: 2;
+}
+
+b{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.footerContainer{
+    display: flex;
+    gap:100px;
+    margin-top: 50px;
+}
+
+.flex h1{
+    font-family: 'Inter', sans-serif;
+}
+
+.flex p{
+    font-family:'Inter', sans-serif;
+    /* font-size: 12px; */
+    color: hsl(236, 13%, 42%);
+}
+
+button{
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-family:'Inter', sans-serif;
+    border: 5px;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+span{
+    color: hsl(233, 8%, 79%);
+    font-size: 35px;
+    font-family:'Hanken Grotesk', sans-serif;;
 }

@@ -1,22 +1,15 @@
 *{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-
-
-.content{
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 2rem;
-    border: 2px yellow;
+div{
+    border-color: yellow;
     background-color: black;
     color: white;
+    font-size: 2rem;
     height: 150px;
-    width: 350px;
-
-}
-.side-b{
-    background-color: ;
+    width:350px;
+    padding:1rem;
 }

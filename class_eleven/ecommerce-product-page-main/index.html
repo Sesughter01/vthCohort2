@@ -12,13 +12,13 @@
 <body>
   <div class="mainContainer">
      <header class="mainHeader">
+          <input type="checkbox" id="menuCheckbox" name="menuController" hidden>
+          <label for="menuController" class="menuContainer">
+              <span class="hamburger"></span>
+          </label>
            <div class="logo">
               <img src="./images/logo.svg" alt="company logo">
            </div>
-           <input type="checkbox" id="menuCheckbox" name="menuController">
-           <label for="menuController" class="menuContainer">
-               <span class="hamburger"></span>
-           </label>
 
            <nav class="navbar">
               <ul class="navList">
@@ -49,8 +49,13 @@
      </header>
       
      <main class="mainSection">
-       <div class="main_img">
-          <img src="./images/image-product-1.jpg" alt="product one">
+       <div class="prev_next">
+         <div class="main_img">
+            <!-- <img src="./images/image-product-1.jpg" alt="product one"> -->
+               <button class="circle_bg" ><img src="./images/icon-previous.svg" alt="previous button icon" id="next" class="direction" ></button>
+               <button class="circle_bg"><img src="./images/icon-next.svg" alt="next button icon" id="previous" class="direction" ></button>
+         </div>
+
        </div>
        <div class="main_textContent">
            <h3 class="main_title">Sneaker Company</h3>

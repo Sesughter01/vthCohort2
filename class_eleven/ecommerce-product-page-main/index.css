@@ -23,11 +23,183 @@
 
     /* Typography */
 
-    --bodyCopy: 16px;
-    --copyWeightLight:400;
-    --copyWeightHeavy:700;
+    --fsbodyCopy: 16px;
+    --fscopyWeightLight:400;
+    --fscopyWeightHeavy:700;
 }
 
 
 /* Mobile First Approach */
 
+body{
+    width: 100vw;
+    height: 891px;
+}
+
+.mainContainer{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+}
+
+.mainHeader{
+
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.8rem;
+}
+
+
+/* Hamburger styles */
+
+.menuContainer{
+
+    width: 1rem;
+    height: 15px;
+    padding-block-start: 0.4rem;
+}
+
+.menuContainer .hamburger, .hamburger::before, .hamburger::after{
+     width: 100%;
+     height: 3px;
+     background-color: var(--dark_grayish_blue);
+     display: block;
+}
+
+.hamburger{
+    position: relative;
+    z-index: 1000;
+}
+.hamburger::before{
+    content: "";
+    position: absolute;
+    margin-top: -6px;
+}
+.hamburger::after{
+    content: "";
+    position: absolute;
+    margin-top: 6px;
+}
+
+/* Logo Styles */
+
+.logo{
+
+}
+
+.cart_avatar{
+    display: flex;
+    align-items: center;
+    margin-inline-end: 0;
+    margin-inline-start: auto;
+    gap:0.8rem;
+}
+ 
+/* Cart Styles */
+.cart{
+
+}
+
+/* Avatar Stylse */
+
+.user_avatar{
+    width: 30px;
+}
+.user_avatar img{
+    max-width: 100%;
+}
+
+
+/* Navbar styles */
+.navbar{
+    position: fixed;
+    background-color: var(--black);
+    max-width: 100vw;
+    transform: translateX(-120%);
+    transition: transform ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar .navList{
+   position: absolute;
+   background-color: var(--white);
+   padding-block-start: 3rem;
+   padding-inline: 1rem;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right:25%;
+
+}
+.navbar .navList .navItem{
+  
+    list-style: none;
+    margin-block: 1rem;
+
+}
+
+.navLink{
+    text-decoration: none;
+    color: var(--very_dark_blue);
+    font-weight: var(--fscopyWeightHeavy);
+}
+
+
+/* Header Styles End  */
+
+/* Main Section Styles */
+
+.mainSection{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.prev_next{
+    background-image: url('./images/image-product-1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35%;
+  
+
+}
+
+.mainSection .main_img{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-inline:1rem ;
+    margin: 35% auto;
+}
+
+
+/* Next and Previous buttons */
+
+.circle_bg{
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 1rem; */
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    outline: none;
+}
+
+.direction{
+    /* right: 1rem;
+    left: auto; */
+
+    width: 12px;
+    height: 16px;
+}

@@ -203,3 +203,59 @@ body{
     width: 12px;
     height: 16px;
 }
+
+ .main_textContent .main_title{
+    color: rgb(247, 166, 15);
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.subtitle{
+    margin-left: 20px;
+    font-size: 35px;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.main_body_text{
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.pricingContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricingContainer .discount{
+margin-left: 0px;
+color: rgb(236, 159, 15);
+background-color: bisque;
+height: 20px;
+width: 50px;
+padding-block: 15px;
+}
+
+
+
+.quantityContainer{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 20px;
+    background-color:hsla(225, 4%, 20%, 0.13);
+    height: 60px;
+    width: 380px;
+    padding-block: 10px;
+    margin: 30px 60px;
+}
+.addToCart button{
+   width: 380px;
+   justify-content: center;
+   height: 50px;
+   background-color: rgb(255, 143, 16) ;
+   margin-left: 60px;
+}

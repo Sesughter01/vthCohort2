@@ -6,43 +6,37 @@
     <title>Class Twelve | Home</title>
     <link rel="stylesheet" href="index.css">
 
-
-
-    <style>
-
-    </style>
 </head>
 <body>
 
-    <div class="main">
-
+    <h1>JAVASCRIPT EVENTS</h1>
     
+    <!-- Events are things that happen to html elements -->
 
-            <h1>JAVASCRIPT EVENTS</h1>
-            
-            <!-- Events are things that happen to html elements -->
+    <!-- Events can be something the browser does or the user does
+    
+         1. An html page has finished loading
+         2. The value in an input has changed 
+         3. A button is clicked
 
-            <!-- Events can be something the browser does or the user does
-            
-                1. An html page has finished loading
-                2. The value in an input has changed 
-                3. A button is clicked
+         <elementName event='javascript do something'>
+    -->
 
-                <elementName event='javascript do something'>
-            -->
 
-            <div class="boto">
-                <button onclick="displayDate()"> The time is?</button>
-                <button onclick="displayDate()"> The time is?</button>
-            </div>
-            
-            
+    <div class="mainContainer"> 
+        <div class="textContent">
+              <div class="a b select">Class list check</div>
+        </div>
+        <div class="buttonContainer">
+          <button id="color_btn" >Change Colour </button>
+          <button onclick="displayDate()">The time is? </button>
+          <p id="text"></p>
+        </div>
+
         
-            <p id="text"></p>
-
-            <script src="index.js"></script>
-    </div>       
-
-
+    </div>
+    
+     <script src="index.js"></script>
+    
 </body>
 </html>

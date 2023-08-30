@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.containerbutton{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+button{
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: green;
+    margin-block: 150px;
+    height: 40px;
+    width: 120px;
+    color: white;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,18 @@
+.button{
+    text-align: center;
+    gap: 20px;
+    margin-block: 300px;
+    display: flex;
+    gap: 120px;
+    margin-inline: 500px;
+}
+
+.button button{
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    width:200px;
+    height:50px;
+
+}

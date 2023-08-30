@@ -9,6 +9,17 @@ const bankAccount = {
         + "<br>Opened on: " + this.openedOn + "<br>Will Expire In: " + this.expiresOn;
     
     }
+
+    
   
   
     };
+
+    const commit = null 
+    if(commit){
+        alert("true")  
+    }
+
+    else{
+        alert("false")  
+    }

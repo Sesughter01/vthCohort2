@@ -15,10 +15,11 @@
 }
 
 
-.buutonContainer{
+.buttonContainer{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     
 }
 
@@ -33,5 +34,5 @@ button{
     background-color: green;
     color: white;
     font-family: sans-serif;
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
 }

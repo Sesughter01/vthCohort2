@@ -17,7 +17,7 @@ btn.addEventListener("click", () => {
   document.body.style.backgroundColor = rndCol;
 });
 
-
+ element.style.transform = "translateX(0%)";
 const span = document.querySelector('.select');
 const classes = span.classList;
 

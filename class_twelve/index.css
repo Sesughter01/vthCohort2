@@ -37,3 +37,7 @@ button{
     font-family: sans-serif;
     /* gap: 1.5rem; */
 }
+
+c textContent{
+    background-color: green;
+}

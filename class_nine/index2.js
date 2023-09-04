@@ -9,17 +9,27 @@ const bankAccount = {
         + "<br>Opened on: " + this.openedOn + "<br>Will Expire In: " + this.expiresOn;
     
     }
-
-    
   
   
     };
 
-    const commit = null 
-    if(commit){
-        alert("true")  
+const btn=document.querySelector('#btn0')
+
+const container=document.getElementById('demo2')
+const btnClasses=btn.classList;
+
+
+
+btn.addEventListener('click',()=>{
+    const connect=btnClasses.toggle('c')
+ 
+    if(connect){
+       container.innerHTML= bankAccount.demo2()
     }
 
     else{
-        alert("false")  
+        container.innerHTML=""
     }
+
+
+})  

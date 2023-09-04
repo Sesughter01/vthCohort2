@@ -84,9 +84,6 @@ body{
 
 /* Logo Styles */
 
-.logo{
-
-}
 
 .cart_avatar{
     display: flex;
@@ -97,9 +94,7 @@ body{
 }
  
 /* Cart Styles */
-.cart{
 
-}
 
 /* Avatar Stylse */
 
@@ -202,7 +197,6 @@ body{
 
     width: 12px;
     height: 16px;
-<<<<<<< HEAD
 }
 
 .main_textContent .main_title{

@@ -65,6 +65,7 @@ body{
      height: 3px;
      background-color: var(--dark_grayish_blue);
      display: block;
+    
 }
 
 .hamburger{
@@ -291,7 +292,7 @@ body{
  }  
 
 
-button{
+.addToCart button{
     height: 57px;
     width: 360px;   
     border-top-left-radius: 0.6rem;
@@ -305,7 +306,8 @@ button{
     font-size: 15px;
 }
 
-button:hover{
+
+.addToCart button:hover{
     background-color: var(--primaryColor2);
 }
 

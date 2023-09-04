@@ -1,4 +1,28 @@
 
+
+
+// const btn = document.querySelector("#showDet");
+// const btnClasses = btn.classList;
+
+// const outcome = btnClasses.toggle(".Dets")
+
+// btn.addEventListener = ("click", () =>{
+  
+// if (outcome) {
+//     customerDetails()
+// }
+
+// else{
+
+// }
+
+// })
+
+
+
+
+
+
 const BankAcc = {
     AccName: 'Paul Oloyede',
     PhoneNumber:'09070735557', 
@@ -20,3 +44,25 @@ const BankAcc = {
 };
 
 
+function customerDetails()  {
+    document.getElementById('customer').innerHTML = BankAcc.customer()
+}
+
+
+const btn = document.querySelector("#showDet");
+const acc = document.querySelector("#customer");
+
+const port = btn.classList
+
+btn.addEventListener("click", () => {
+    
+    const outcome = port.toggle("select")
+    
+    if(outcome) {
+        customerDetails() 
+    }
+    else{
+        document.getElementById('customer').innerHTML = ""
+    }
+}
+)

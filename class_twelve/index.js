@@ -24,10 +24,10 @@ const classes = span.classList;
 span.addEventListener('click',()=>{
 
    const result = classes.toggle('c');
-   span.textContent = `'c' ${
+  //  span.textContent = `'c' ${
 
-     result ? "added" : "removed"
-   }; classlist is now "${classes}".`
+  //    result ? "added" : "removed"
+  //  }; classlist is now "${classes}".`
 })
 
 /**

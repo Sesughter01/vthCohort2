@@ -17,18 +17,7 @@ btn.addEventListener("click", () => {
   document.body.style.backgroundColor = rndCol;
 });
 
-<<<<<<< HEAD
-let x = undefined
-if(x)  {
-  alert ("true")
-// return "true"
-}
-
-else{
-  alert ("false")
-}
-=======
-
+ element.style.transform = "translateX(0%)";
 const span = document.querySelector('.select');
 const classes = span.classList;
 

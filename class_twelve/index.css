@@ -43,7 +43,11 @@ button{
    gap: 2rem;
 }
 
-
+div.textContent:has(.c){
+    background-color: green;
+    color: white;
+    padding: 3rem;
+}
 .buttonContainer{
     display: flex;
     justify-content: center;

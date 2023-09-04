@@ -17,17 +17,28 @@ btn.addEventListener("click", () => {
   document.body.style.backgroundColor = rndCol;
 });
 
+<<<<<<< HEAD
 
+=======
+ element.style.transform = "translateX(0%)";
+>>>>>>> master
 const span = document.querySelector('.select');
 const classes = span.classList;
 
 span.addEventListener('click',()=>{
 
    const result = classes.toggle('c');
+<<<<<<< HEAD
   //  span.textContent = `'c' ${
 
   //    result ? "added" : "removed"
   //  }; classlist is now "${classes}".`
+=======
+   span.textContent = `'c' ${
+
+     result ? "added" : "removed"
+   }; classlist is now "${classes}".`
+>>>>>>> master
 })
 
 /**

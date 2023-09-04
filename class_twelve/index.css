@@ -12,6 +12,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
+<<<<<<< HEAD
     gap: 2rem;
 }
 
@@ -40,6 +41,16 @@
 
 
 
+=======
+   gap: 2rem;
+}
+
+div.textContent:has(.c){
+    background-color: green;
+    color: white;
+    padding: 3rem;
+}
+>>>>>>> master
 .buttonContainer{
     display: flex;
     justify-content: center;

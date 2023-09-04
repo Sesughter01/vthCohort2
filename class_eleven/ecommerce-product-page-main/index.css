@@ -65,7 +65,10 @@ body{
      height: 3px;
      background-color: var(--dark_grayish_blue);
      display: block;
+<<<<<<< HEAD
     
+=======
+>>>>>>> master
 }
 
 .hamburger{
@@ -203,6 +206,7 @@ body{
 
     width: 12px;
     height: 16px;
+<<<<<<< HEAD
 }
 /* content about the sneakers */
 
@@ -318,3 +322,6 @@ body{
 
 
 
+=======
+}
+>>>>>>> master

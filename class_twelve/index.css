@@ -15,7 +15,15 @@
    gap: 2rem;
 }
 
+<<<<<<< HEAD
 
+=======
+div.textContent:has(.c){
+    background-color: green;
+    color: white;
+    padding: 3rem;
+}
+>>>>>>> ef2805fd7ffaf273252add4e7c7d206b584cb132
 .buttonContainer{
     display: flex;
     justify-content: center;

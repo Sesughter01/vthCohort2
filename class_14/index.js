@@ -4,15 +4,15 @@ let text = '';
 let divModel = document.querySelector('.divModel');
 let divModel_2 = document.querySelector('.divModel_2');
 const p1 = document.getElementById('arrays1');
+const p = document.getElementById('arrays');
 
 // Original elements in the array above
 
-const p = document.getElementById('arrays');
 models.forEach(addContent);
 
  function addContent(value, index, arrays) {
 
-    p.innerHTML += `${value} <br>`;
+    p1.innerHTML += `${value} <br>`;
     // text = p;
     // divModel.appendChild(text);
 }
@@ -37,11 +37,11 @@ models2.push('Analysts');
 
 
 
-models2.forEach(addContent);
+models2.forEach(addContent2);
     
- function addContent(value, index, arrays) {
+ function addContent2(value, index, arrays) {
   
-    p1.innerHTML += `${value} <br>`;
+    p.innerHTML += `${value} <br>`;
     // text = p1;
     // divModel_2.appendChild(text);
 }

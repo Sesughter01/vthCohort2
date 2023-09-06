@@ -61,8 +61,8 @@ btn2.addEventListener('click',()=>{
     const student_name_container = document.createElement('h3');
     const student_num_container = document.createElement('p');
     if(check == "true"){
-        student_name_container.innerText = stdName;
-        student_num_container.innerText = stdNum ;
+        student_name_container.innerText = newStdName;
+        student_num_container.innerText = newStdNum;
         student_data.appendChild(student_name_container);
         student_data.appendChild( student_num_container);
         container.appendChild(student_data);
@@ -72,4 +72,16 @@ btn2.addEventListener('click',()=>{
         container.innerHTML= "";
         // console.log(container.innerHTML);
     }
+    
+    let x= "a"
+    let y= "b"
+
+    if (a>b) {
+        console.log("true")
+    }
+
+    else {
+        console.log("false")
+    }
+
 })

@@ -28,8 +28,8 @@ const stdName = student.getName();
 const stdNum = student.getNum();
 
 // Create New Student
-const newStdName = student.setName('Feranmi');
-const newStdNum = student.setNum(343265);
+const StdNameDetails = student.setName('Boluwatife');
+const StdNumDetails = student.setNum(54321);
 // alert(newStdNum);
 
 const btnClasses = btn.classList;
@@ -41,8 +41,8 @@ btn.addEventListener('click',()=>{
     const student_name_container = document.createElement('h3');
     const student_num_container = document.createElement('p');
     if(check == "true"){
-        student_name_container.innerText = stdName;
-        student_num_container.innerText = stdNum ;
+        student_name_container.innerText = StdNameDetails;
+        student_num_container.innerText = StdNumDetails ;
         student_data.appendChild(student_name_container);
         student_data.appendChild( student_num_container);
         container.appendChild(student_data);
@@ -53,6 +53,8 @@ btn.addEventListener('click',()=>{
         // console.log(container.innerHTML);
     }
 })
+
+
 btn2.addEventListener('click',()=>{
     const addToggle = btnClasses.toggle('open');
     const check = addToggle ? "true":"false";
@@ -62,7 +64,7 @@ btn2.addEventListener('click',()=>{
     const student_num_container = document.createElement('p');
     if(check == "true"){
         student_name_container.innerText = stdName;
-        student_num_container.innerText = stdNum ;
+        student_num_container.innerText = stdNum;
         student_data.appendChild(student_name_container);
         student_data.appendChild( student_num_container);
         container.appendChild(student_data);

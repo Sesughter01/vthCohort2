@@ -51,8 +51,6 @@ models2.forEach(addContent2);
 
 // Row Three model
 
-
-
 models2[0] = 'HOC';
 models2[1] = 'HOD';
 models2[2] = 'Advisor';

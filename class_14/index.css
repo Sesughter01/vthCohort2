@@ -11,3 +11,12 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+h1{
+    text-indent: 25rem;
+}
+
+
+.MainContainer{
+    margin-top: 2rem;
+}

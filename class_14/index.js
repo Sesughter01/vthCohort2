@@ -1,10 +1,13 @@
-const models = ['user','student','teachers','subject'];
+const models = ['User','Student','Teachers','Subject'];
 const models2 = [ ];
+const models3 = [ ];
 let text = '';
-let divModel = document.querySelector('.divModel');
+let divModel = document.querySelector('.divModel_1');
 let divModel_2 = document.querySelector('.divModel_2');
-const p1 = document.getElementById('arrays1');
+let divModel_3 = document.querySelector('.divModel_3');
 const p = document.getElementById('arrays');
+const p1 = document.getElementById('arrays1');
+const p2 = document.getElementById('arrays2');
 
 // Original elements in the array above
 
@@ -12,7 +15,7 @@ models.forEach(addContent);
 
  function addContent(value, index, arrays) {
 
-    p1.innerHTML += `${value} <br>`;
+    p.innerHTML += `${value} <br>`;
     // text = p;
     // divModel.appendChild(text);
 }
@@ -21,7 +24,7 @@ models.forEach(addContent);
 
 // changing elements in the array above
 
-// adding elements in the array in line 1
+// Row two model
 
 models[0] = 'Instructors';
 models[1] = 'Mechanics';
@@ -29,10 +32,10 @@ models[2] = 'Validators';
 models[3] = 'Analysts';
 
 
-models2.push('Instructors');
-models2.push('Mechanics');
-models2.push('Validators');
-models2.push('Analysts');
+models2.push(models[0]);
+models2.push(models[1]);
+models2.push(models[2]);
+models2.push(models[3]);
 
 
 
@@ -41,23 +44,30 @@ models2.forEach(addContent2);
     
  function addContent2(value, index, arrays) {
   
-    p.innerHTML += `${value} <br>`;
+    p1.innerHTML += `${value} <br>`;
     // text = p1;
     // divModel_2.appendChild(text);
 }
 
-
-// models2.push('HOC');
-// models2.push('HOD');
-// models2.push('Advisor');
-// models2.push('Dean');
+// Row Three model
 
 
-// models2.forEach(addContent);
+
+models2[0] = 'HOC';
+models2[1] = 'HOD';
+models2[2] = 'Advisor';
+models2[3] = 'Dean';
+
+models3.push(models2[0])
+models3.push(models2[1])
+models3.push(models2[2])
+models3.push(models2[3])
+
+ models3.forEach(addContent3);
     
-//  function addContent(value, index, arrays) {
+  function addContent3(value, index, arrays) {
   
-//     p1.innerHTML += `${value} <br>`;
-//     // text = p1;
-//     // divModel_2.appendChild(text);
-// }
+     p2.innerHTML += `${value} <br>`;
+     // text = p1;
+    // divModel_2.appendChild(text);
+}

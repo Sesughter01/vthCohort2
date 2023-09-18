@@ -43,7 +43,6 @@ body{
 }
 
 .mainHeader{
-
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -54,7 +53,6 @@ body{
 /* Hamburger styles */
 
 .menuContainer{
-
     width: 1rem;
     height: 15px;
     padding-block-start: 0.4rem;
@@ -65,10 +63,7 @@ body{
      height: 3px;
      background-color: var(--dark_grayish_blue);
      display: block;
-<<<<<<< HEAD
     
-=======
->>>>>>> master
 }
 
 .hamburger{
@@ -206,7 +201,6 @@ body{
 
     width: 12px;
     height: 16px;
-<<<<<<< HEAD
 }
 /* content about the sneakers */
 
@@ -276,10 +270,7 @@ body{
     gap: 140px;
     margin-block: 20px;   
     padding-block: 15px; 
-    border-top-left-radius: 0.6rem;
-    border-bottom-left-radius: 0.6rem ;
-    border-top-right-radius: 0.6rem;
-    border-bottom-right-radius: 0.6rem;
+    border-radius: 0.6rem;
 }
 
 .minusContainer{
@@ -319,9 +310,3 @@ body{
 
 
 
-
-
-
-=======
-}
->>>>>>> master

@@ -1,3 +1,4 @@
+// Code here below
 function myFunction() {
     const message = document.getElementById("p01"); 
     message.innerHTML = "";

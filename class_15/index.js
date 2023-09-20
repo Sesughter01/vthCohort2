@@ -38,6 +38,7 @@ if(todayDate == "str"){
 for(let i = 0;i<2;i++){
    
     console.log(i)
+<<<<<<< HEAD
 
 }
 
@@ -51,3 +52,6 @@ for(let i = 0;i<2;i++){
 
     const participant = {firstname:"negroherald69", age:"60",};
     
+=======
+}
+>>>>>>> master

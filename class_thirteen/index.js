@@ -23,6 +23,12 @@ const student = {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+const myObj = {}
+const myStr = 'String'
+
+>>>>>>> master
 =======
 const myObj = {}
 const myStr = 'String'
@@ -61,6 +67,7 @@ btn.addEventListener('click',()=>{
 })
 btn2.addEventListener('click',()=>{
 <<<<<<< HEAD
+<<<<<<< HEAD
     const addToggle = btnClasses.toggle('open');
     const check = addToggle ? "true":"false";
     // console.log(check)
@@ -81,6 +88,8 @@ btn2.addEventListener('click',()=>{
     }
 })
 =======
+=======
+>>>>>>> master
     // const addToggle = btnClasses.toggle('open');
     // const check = addToggle ? "true":"false";
     // // console.log(check)
@@ -111,5 +120,9 @@ let myStr2 = 'This is Javascript Code'
 
 let ascr = myStr2.slice(11,15)
 
+<<<<<<< HEAD
+console.log(ascr )
+>>>>>>> master
+=======
 console.log(ascr )
 >>>>>>> master

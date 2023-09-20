@@ -22,6 +22,12 @@ const student = {
     }
 }
 
+<<<<<<< HEAD
+=======
+const myObj = {}
+const myStr = 'String'
+
+>>>>>>> master
 
 // Get Student Name and Number
 const stdName = student.getName();
@@ -54,6 +60,7 @@ btn.addEventListener('click',()=>{
     }
 })
 btn2.addEventListener('click',()=>{
+<<<<<<< HEAD
     const addToggle = btnClasses.toggle('open');
     const check = addToggle ? "true":"false";
     // console.log(check)
@@ -73,3 +80,36 @@ btn2.addEventListener('click',()=>{
         // console.log(container.innerHTML);
     }
 })
+=======
+    // const addToggle = btnClasses.toggle('open');
+    // const check = addToggle ? "true":"false";
+    // // console.log(check)
+    // const student_data = document.createElement('div');
+    // const student_name_container = document.createElement('h3');
+    // const student_num_container = document.createElement('p');
+    // if(check == "true"){
+    //     student_name_container.innerText = stdName;
+    //     student_num_container.innerText = stdNum ;
+    //     student_data.appendChild(student_name_container);
+    //     student_data.appendChild( student_num_container);
+    //     container.appendChild(student_data);
+
+    // }else if(check == "false"){
+        
+    //     container.innerHTML= "";
+        // console.log(container.innerHTML);
+    // }
+})
+// in indexing arrays or other collection types; the first value in the has an index of 0, second has index 1 etc
+let myKyat = 'cat';
+let myChar = myKyat.charAt(0);
+// myKyat[0] = ' j';
+myChar = myKyat[0];
+// console.log(myKyat);
+
+let myStr2 = 'This is Javascript Code'
+
+let ascr = myStr2.slice(11,15)
+
+console.log(ascr )
+>>>>>>> master

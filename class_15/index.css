@@ -1,0 +1,14 @@
+*{
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+
+body{
+  justify-content: center;
+}
+
+.display{
+justify-content: center;
+}

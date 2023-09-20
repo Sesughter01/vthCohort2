@@ -23,11 +23,17 @@ const student = {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 const myObj = {}
 const myStr = 'String'
 
 >>>>>>> 47d0aa869fc65736d2ee7f833681d26da9157c2c
+=======
+const myObj = {}
+const myStr = 'String'
+
+>>>>>>> dbba3aeb16c6b12588a661b79045c69337e391d8
 
 // Get Student Name and Number
 const stdName = student.getName();
@@ -61,6 +67,7 @@ btn.addEventListener('click',()=>{
 })
 btn2.addEventListener('click',()=>{
 <<<<<<< HEAD
+<<<<<<< HEAD
     const addToggle = btnClasses.toggle('open');
     const check = addToggle ? "true":"false";
     // console.log(check)
@@ -81,6 +88,8 @@ btn2.addEventListener('click',()=>{
     }
 })
 =======
+=======
+>>>>>>> dbba3aeb16c6b12588a661b79045c69337e391d8
     // const addToggle = btnClasses.toggle('open');
     // const check = addToggle ? "true":"false";
     // // console.log(check)
@@ -111,5 +120,9 @@ let myStr2 = 'This is Javascript Code'
 
 let ascr = myStr2.slice(11,15)
 
+<<<<<<< HEAD
 console.log(ascr )
 >>>>>>> 47d0aa869fc65736d2ee7f833681d26da9157c2c
+=======
+console.log(ascr )
+>>>>>>> dbba3aeb16c6b12588a661b79045c69337e391d8

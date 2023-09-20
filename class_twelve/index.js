@@ -17,7 +17,23 @@ btn.addEventListener("click", () => {
   document.body.style.backgroundColor = rndCol;
 });
 
+<<<<<<< HEAD
  element.style.transform = "translateX(0%)";
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+ element.style.transform = "translateX(0%)";
+>>>>>>> ef2805fd7ffaf273252add4e7c7d206b584cb132
+=======
+ element.style.transform = "translateX(0%)";
+>>>>>>> 47d0aa869fc65736d2ee7f833681d26da9157c2c
+=======
+ element.style.transform = "translateX(0%)";
+>>>>>>> dbba3aeb16c6b12588a661b79045c69337e391d8
+>>>>>>> master
 const span = document.querySelector('.select');
 const classes = span.classList;
 

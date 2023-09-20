@@ -1,4 +1,5 @@
 // Code here below
+<<<<<<< HEAD
 function myFunction() {
     const message = document.getElementById("p01"); 
     message.innerHTML = "";
@@ -20,3 +21,15 @@ function myFunction() {
       message.innerHTML = "Input is " + err;
     }
   }
+=======
+
+function myFunction(){
+    // some code 
+}
+
+try{
+    // try something
+}catch{
+    // if what you tried does not work do this
+}
+>>>>>>> ab590b780c2f075ad321eaf9c97395849d8d3069

@@ -44,11 +44,17 @@ const obj = {
 
 // console.log(obj.p1);
 
-// Regular Function:
-hello = function() {
-    document.getElementById("demo").innerHTML = `${this} <br> <br>`;
-  }
+// a function is passed to a global variable "hello"
+// hello = function() {
+//     document.getElementById("demo").innerHTML += `${this} <br> <br>`;
+//   }
   
+// an arrrow is  passed to a global variable "hello" 
+  hello = () => {
+    document.getElementById("demo").innerHTML += `${this} <br> <br>`;
+}
+  
+
   // The window object calls the function:
   window.addEventListener("load", hello);
   

@@ -18,11 +18,11 @@ for (let y in person) {
 let language = "JavaScript";
 
 let text2 = "";
-for (let x of language) {
-    if( x == "S"){
+for (let okpe of language) {
+    if( okpe == "S"){
         continue;
     }
-    text2 += `${x} <br>`;
+    text2 += `${okpe} <br>`;
     para.innerHTML = text2 ;
 }
 container.appendChild(para);

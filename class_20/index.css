@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+
+button{
+    width: 150px;
+    height: 40px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+/* End of button styling */
+
+/* Body styling */
+body {
+    background-color:  hsl(207, 100%, 98%);
+}

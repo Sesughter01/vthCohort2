@@ -25,7 +25,7 @@
 
 const BankAcc = {
     AccName: 'Paul Oloyede',
-    PhoneNumber:'09070735557', 
+    PhoneNumber:9070735557, 
     HouseAddress:'Toso Olododo, Magboro-Akeran, Ogun state',
     TypeOfBankAcc:'Business account',
     Occupation:'Junior Dev',

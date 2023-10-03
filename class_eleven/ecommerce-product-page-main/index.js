@@ -1,15 +1,22 @@
 // function navElements
-const btn = document.querySelector('.menuContainer');
-const  navElements = document.querySelector('.navList')
+const menu = document.getElementById('JS_Menu');
+let menu2 = document.querySelector('.navbar')
 
-const Elmnts = btn.classList
-
-btn.addEventListener ( 'click', ()=>{
-    const outcome = Elmnts.toggle('select')
-    document.menuContainer.style.transform = translateX(0%);
+function displayNavbar () {
+    menu2.style.transform = 'translateX(0)'
 }
+
+const toggleDisplay = menu.classList
+
+menu.addEventListener ( 'click', ()=>{
+    const displayNav = toggleDisplay.toggle('select');
+    if (displayNav) {
+        displayNavbar ();
+    } else {
+        menu2.style.transform = '';
+    }
     
-)
+})
 
 
 

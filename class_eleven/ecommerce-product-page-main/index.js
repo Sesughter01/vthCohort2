@@ -1,24 +1,23 @@
 // function navElements
-const menu = document.getElementById('JS_Menu');
-let menu2 = document.querySelector('.navbar')
+const menuBar = document.getElementById('JS_menuBar');
+let menu2 = document.querySelector('.navbar');
 
-function displayNavbar () {
-    menu2.style.transform = 'translateX(0)'
+
+function displayNavbar() {
+    menu2.style.transform = 'translateX(0)';
 }
 
-const toggleDisplay = menu.classList
+const toggleDisplay = menuBar.classList
 
-menu.addEventListener ( 'click', ()=>{
-    const displayNav = toggleDisplay.toggle('select');
+menuBar.addEventListener ('click', ()=>{
+    let displayNav = toggleDisplay.toggle('is-active');
     if (displayNav) {
-        displayNavbar ();
+        displayNavbar();
+        document.body.classList.toggle('is-active');
     } else {
         menu2.style.transform = '';
     }
     
 })
-
-
-
 
 

@@ -33,3 +33,10 @@ The designs were created to the following widths:
 
 - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
 - Weights: 400, 700
+
+
+<input type="checkbox" id="menuCheckbox" name="menuController" hidden>
+          <label for="menuController" id="JS_Menu" class="menuContainer">
+              <span class="hamburger"></span>
+          </label>
+          #454545

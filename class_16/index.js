@@ -19,17 +19,23 @@ let language = "JavaScript";
 
 let text2 = "";
 <<<<<<< HEAD
+<<<<<<< HEAD
 for (let x of language) {
     if( x == "S"){
         continue;
     }
     text2 += `${x} <br>`;
 =======
+=======
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
 for (let okpe of language) {
     if( okpe == "S"){
         continue;
     }
     text2 += `${okpe} <br>`;
+<<<<<<< HEAD
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
+=======
 >>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
     para.innerHTML = text2 ;
 }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 class BankAccount {
   constructor(name, email, bvn) {
     this.name = name;
@@ -11,6 +12,8 @@ class BankAccount {
 
 console.log(`${2+2}`)
 =======
+=======
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
   // Creating an Object using JavaScript object literal
   const myObj = {
     myName : "Pakuro",
@@ -52,5 +55,9 @@ container2.style.backgroundColor = fruit.myColor
 myContainer.innerHTML =myObj.getMyName()
 fruit.setFname('apple')
 myContainer2.innerHTML = fruit.getFname()
+<<<<<<< HEAD
+// console.log(person.myName)
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
+=======
 // console.log(person.myName)
 >>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79

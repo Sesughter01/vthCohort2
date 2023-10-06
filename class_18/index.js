@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // // Code here
 // // "use strict"
 // // try{
@@ -69,6 +70,8 @@ window.addEventListener("load", hello);
 //A button object calls the function:
 document.getElementById("click1").addEventListener("click", hello);
 =======
+=======
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
 // Code here
 // "use strict"
 // try{
@@ -180,4 +183,7 @@ function countWords(arr) {
 // const ans = countWords(strArray);
 // console.log(ans);
 
+<<<<<<< HEAD
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
+=======
 >>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79

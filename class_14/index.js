@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 
 const models = ['user','student','teachers','subject']
 
 const models2= ['user','student','teachers','subject'];
 const models3 = [ ];
+=======
+const models = ['user','student','teachers','subject'];
+const models2 = [ ];
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
 let text = '';
 let divModel = document.querySelector('.divModel');
 let divModel_2 = document.querySelector('.divModel_2');
@@ -63,3 +68,7 @@ models2.forEach(addContent);
 //     p1.innerHTML += `${value} <br>`;
 //     // text = p1;
 //     // divModel_2.appendChild(text);
+<<<<<<< HEAD
+=======
+// }
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79

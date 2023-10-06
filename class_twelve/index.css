@@ -15,13 +15,19 @@
    gap: 2rem;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
 div.textContent:has(.c){
     background-color: green;
     color: white;
     padding: 3rem;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
 .buttonContainer{
     display: flex;
     justify-content: center;

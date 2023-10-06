@@ -13,7 +13,6 @@ menuBar.addEventListener ('click', ()=>{
     let displayNav = toggleDisplay.toggle('is-active');
     if (displayNav) {
         displayNavbar();
-        document.body.classList.toggle('is-active');
     } else {
         menu2.style.transform = '';
     }

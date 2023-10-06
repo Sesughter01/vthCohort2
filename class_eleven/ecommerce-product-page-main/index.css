@@ -60,6 +60,7 @@ body{
     border-radius: 0.3rem;
     padding-block-start: 0.4rem;
     cursor: pointer;
+    z-index: 100;
 }
 
 .menu div {
@@ -95,9 +96,11 @@ body{
 
 .is-active .line1 {
     transform: translate(-40%, 10%) rotate(45deg);
+    z-index: 100
 }
 .is-active .line3 {
     transform: translate(-40%, 10%) rotate(-45deg);
+    z-index: 100;
 }
 
 /* Logo Styles */
@@ -109,7 +112,7 @@ body{
     gap:0.8rem;
 }
 
-/* Avatar Stylse */
+/* Avatar Style */
 
 .user_avatar{
     width: 30px;

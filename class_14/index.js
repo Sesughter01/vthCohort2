@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 const models = ['user','student','teachers','subject']
-=======
-=======
->>>>>>> ab590b780c2f075ad321eaf9c97395849d8d3069
-const models = ['user','student','teachers','subject'];
-const models2 = [ ];
+
+const models2= ['user','student','teachers','subject'];
+const models3 = [ ];
 let text = '';
 let divModel = document.querySelector('.divModel');
 let divModel_2 = document.querySelector('.divModel_2');
@@ -66,9 +63,3 @@ models2.forEach(addContent);
 //     p1.innerHTML += `${value} <br>`;
 //     // text = p1;
 //     // divModel_2.appendChild(text);
-<<<<<<< HEAD
-// }
->>>>>>> dbba3aeb16c6b12588a661b79045c69337e391d8
-=======
-// }
->>>>>>> ab590b780c2f075ad321eaf9c97395849d8d3069

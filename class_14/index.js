@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const models = ['user','student','teachers','subject']
 const models2 = []
 let grab = document.querySelector('#second')
@@ -34,10 +34,24 @@ models2.forEach(add2);
 function add2(value, index, array){
     bag.innerHTML+=`${value} <br>`
 
-const models = ['user','student','teachers','subject']
+// const models = ['user','student','teachers','subject']
+
+// const models = ['user','student','teachers','subject'];
+// const models2 = [ ];
+
+// const models = ['user','student','teachers','subject']
+
+// const models2= ['user','student','teachers','subject'];
+// const models3 = 
+// const models = ['user','student','teachers','subject'];
+// const models2 = [ ];
+
+
+
 
 const models = ['user','student','teachers','subject'];
 const models2 = [ ];
+
 let text = '';
 let divModel = document.querySelector('.divModel');
 let divModel_2 = document.querySelector('.divModel_2');
@@ -54,15 +68,14 @@ models.forEach(addContent);
     // text = p;
     // divModel.appendChild(text);
 
+
 }
 
+}
 
-
-<<<<<<< HEAD
 //appendChild(text)
 
 //models[0, 1, 2, 3] = 'Login', 'Password', 'gear', 'brake';
-=======
 // changing elements in the array above
 
 // adding elements in the array in line 1
@@ -104,4 +117,3 @@ models2.forEach(addContent);
 //     p1.innerHTML += `${value} <br>`;
 //     // text = p1;
 //     // divModel_2.appendChild(text);
-// }

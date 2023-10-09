@@ -1,6 +1,9 @@
 const container = document.querySelector('.display')
 const p = document.querySelector('.demo');
+<<<<<<< HEAD
 const p1 = document.querySelector('demo2')
+=======
+>>>>>>> master
 let acct_bal = 12000.167543;
 const roundedBal = Math.round(acct_bal);
 const myPi = Math.PI;
@@ -39,6 +42,7 @@ if(todayDate == "str"){
 for(let i = 0;i<2;i++){
    
     console.log(i)
+<<<<<<< HEAD
 }
 
 // let text = todayday
@@ -59,3 +63,6 @@ for (let i = 0; i < week.length; i++) {
   container.append(week[i]);
 
 }
+=======
+}
+>>>>>>> master

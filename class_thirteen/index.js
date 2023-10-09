@@ -25,7 +25,6 @@ const student = {
 const myObj = {}
 const myStr = 'String'
 
->>>>>>> 47d0aa869fc65736d2ee7f833681d26da9157c2c
 
 // Get Student Name and Number
 const stdName = student.getName();
@@ -58,27 +57,6 @@ btn.addEventListener('click',()=>{
     }
 })
 btn2.addEventListener('click',()=>{
-<<<<<<< HEAD
-    const addToggle = btnClasses.toggle('open');
-    const check = addToggle ? "true":"false";
-    // console.log(check)
-    const student_data = document.createElement('div');
-    const student_name_container = document.createElement('h3');
-    const student_num_container = document.createElement('p');
-    if(check == "true"){
-        student_name_container.innerText = stdName;
-        student_num_container.innerText = stdNum ;
-        student_data.appendChild(student_name_container);
-        student_data.appendChild( student_num_container);
-        container.appendChild(student_data);
-
-    }else if(check == "false"){
-        
-        container.innerHTML= "";
-        // console.log(container.innerHTML);
-    }
-})
-=======
     // const addToggle = btnClasses.toggle('open');
     // const check = addToggle ? "true":"false";
     // // console.log(check)
@@ -110,5 +88,9 @@ let myStr2 = 'This is Javascript Code'
 let ascr = myStr2.slice(11,15)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 console.log(ascr )
 >>>>>>> 47d0aa869fc65736d2ee7f833681d26da9157c2c
+=======
+console.log(ascr )
+>>>>>>> master

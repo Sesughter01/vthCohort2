@@ -1,7 +1,10 @@
 const container = document.querySelector('.display')
 const p = document.querySelector('.demo');
 <<<<<<< HEAD
+<<<<<<< HEAD
 const p1 = document.querySelector('demo2')
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 let acct_bal = 12000.167543;
@@ -43,6 +46,7 @@ for(let i = 0;i<2;i++){
    
     console.log(i)
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 // let text = todayday
@@ -63,6 +67,9 @@ for (let i = 0; i < week.length; i++) {
   container.append(week[i]);
 
 }
+=======
+}
+>>>>>>> master
 =======
 }
 >>>>>>> master

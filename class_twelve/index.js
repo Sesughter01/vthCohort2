@@ -19,6 +19,7 @@ btn.addEventListener("click", () => {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  element.style.transform = "translateX(0%)";
 =======
 <<<<<<< HEAD
@@ -34,6 +35,9 @@ btn.addEventListener("click", () => {
 =======
  element.style.transform = "translateX(0%)";
 >>>>>>> dbba3aeb16c6b12588a661b79045c69337e391d8
+>>>>>>> master
+=======
+ element.style.transform = "translateX(0%)";
 >>>>>>> master
 =======
  element.style.transform = "translateX(0%)";

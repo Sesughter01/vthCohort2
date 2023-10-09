@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 const models = ['user','student','teachers','subject']
 const models2 = []
@@ -52,6 +53,23 @@ function add2(value, index, array){
 const models = ['user','student','teachers','subject'];
 const models2 = [ ];
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+const models = ['user','student','teachers','subject']
+
+const models2= ['user','student','teachers','subject'];
+const models3 = [ ];
+=======
+const models = ['user','student','teachers','subject'];
+const models2 = [ ];
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
+=======
+const models = ['user','student','teachers','subject'];
+const models2 = [ ];
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
+>>>>>>> master
 let text = '';
 let divModel = document.querySelector('.divModel');
 let divModel_2 = document.querySelector('.divModel_2');
@@ -67,6 +85,7 @@ models.forEach(addContent);
     p.innerHTML += `${value} <br>`;
     // text = p;
     // divModel.appendChild(text);
+<<<<<<< HEAD
 
 
 }
@@ -76,6 +95,12 @@ models.forEach(addContent);
 //appendChild(text)
 
 //models[0, 1, 2, 3] = 'Login', 'Password', 'gear', 'brake';
+=======
+}
+
+
+
+>>>>>>> master
 // changing elements in the array above
 
 // adding elements in the array in line 1
@@ -117,3 +142,14 @@ models2.forEach(addContent);
 //     p1.innerHTML += `${value} <br>`;
 //     // text = p1;
 //     // divModel_2.appendChild(text);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+// }
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
+=======
+// }
+>>>>>>> 025555177f6fbdc075ad9fecfcd6fc22fc5b1d79
+>>>>>>> master

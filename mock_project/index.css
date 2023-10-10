@@ -1,0 +1,107 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 100vh;
+    background-image: url('./frontendMentorDocs/loopstudios-landing-page-main/images/desktop/image-hero.jpg');
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    color: white;
+    height: 10vh;
+    align-items: center;
+}
+
+nav h1{
+    font-size: 3rem;
+}
+
+.nav-items{
+    display: flex;
+    gap: 40px;
+}
+
+li{
+    list-style: none;
+}
+.nav-items li a{
+ text-decoration: none;
+ color:  white;
+ font-size: 1.5rem;
+}
+
+.bannertext{
+    font-size: 3rem;
+    margin-left: 70px;
+    width: 500px;
+    border: 1px solid white;
+    padding: 40px;
+    color: white;
+    margin-top: 95px;
+}
+.abSection{
+    padding: 90px;
+    position: relative;
+}
+
+.right-cont{
+    background-color: white;
+    width: 600px;
+    height: 296px;
+    padding: 100px;
+    position: absolute;
+    top: 295px;
+    left: 500px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin:30px 70px ;
+    align-items: center;
+
+}
+.flex h1{
+    font-size: 3rem;
+}
+
+.flex button{
+    padding: 10px 30px;
+    background: none;
+cursor: pointer;
+}
+
+.flexII{
+    display: flex;
+    margin:0 70px ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 40px 70px;
+    margin-top: 70px;
+}
+footer ul{
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+footer p{
+    margin-top: 20px;
+}

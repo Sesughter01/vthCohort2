@@ -49,3 +49,5 @@ We provide the required social icons. But, if you prefer, you can use a font ico
 
 font-family: 'Alata', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
+
+<img src="/mock_project/frontendMentorDocs/loopstudios-landing-page-main/images/logo.svg" alt="">

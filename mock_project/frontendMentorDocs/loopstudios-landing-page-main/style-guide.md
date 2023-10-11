@@ -39,3 +39,13 @@ We provide the required social icons. But, if you prefer, you can use a font ico
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;

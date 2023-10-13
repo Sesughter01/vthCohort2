@@ -1,5 +1,5 @@
 // Variable declaration to store the creation of different html elements
-let body = document.getElementById("App");
+const body = document.getElementById("App");
 
 let container = document.createElement("div");
 let header = document.createElement("header");
@@ -7,13 +7,13 @@ header.className = "headerOne";
 
 // Navigation elements markup
 let nav = document.createElement("nav");
-let logo = document.createElement("img");
+const logo = document.createElement("img");
 logo.className = 'logoImg'
 logo.src = "/mock_project/frontendMentorDocs/loopstudios-landing-page-main/images/logo.svg";
-let navItems = document.createElement("ul");
+const navItems = document.createElement("ul");
 navItems.className = "nav_items";
 
-let nav_Links = `
+const nav_Links = `
             <li><a href="#">About</a></li>
             <li><a href="#">Careers</a></li>
             <li><a href="#">Events</a></li>
@@ -69,7 +69,7 @@ containerOne.append(button)
 let imageContainer = document.createElement("div");
 imageContainer.className = "image_array"
 
-// An array with a for loop to hold and iterate all the Gallery in the container 
+// An array with a for loop to hold and iterate all the images in the container 
 
 let imageArr = [
     "./frontendMentorDocs/loopstudios-landing-page-main/images/desktop/image-night-arcade.jpg", 
@@ -97,27 +97,82 @@ secondSection.append(containerOne)
 secondSection.append(imageDisplay);
 
 // Markup for the footer
-let footerSection = document.createElement("footer")
+let footerSection = document.createElement("footer");
+footerSection.className = 'footerSection'
+let footerContainer = document.createElement("div");
+footerContainer.className = 'footerContainer';
 
-let footerItems = `
-  <div>
-  <img src="/mock_project/frontendMentorDocs/loopstudios-landing-page-main/images/logo.svg">
-  <ul>
-  <li>About<li>
-  <li>Careers<li>
-  <li>Events<li>
-  <li>Products<li>
-  <li>Supports<li>
-  </ul>
-  </div>
-  <div>
-  <img src="/mock_project/frontendMentorDocs/loopstudios-landing-page-main/images/logo.svg">
-  <p>2023 | Loopstudios. All rights reserved</p>
-  </div>
-  `
-  footerSection.innerHTML = footerItems
-  
-  
+let footerItems = document.createElement('div');
+footerItems.className = 'footerItemOne';
+
+let footLogo = document.createElement("div");
+const logoTwo = document.createElement("img");
+logoTwo.className = 'logoImg'
+logoTwo.src = "/mock_project/frontendMentorDocs/loopstudios-landing-page-main/images/logo.svg";
+
+footLogo.append(logoTwo)
+
+let footerNav = document.createElement('div');
+footerNav.className = 'footerNav';
+let footNav = document.createElement("nav");
+const navItemsTwo = document.createElement("ul");
+navItemsTwo.className = "nav_items";
+
+const nav_LinksTwo = `
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+    `;
+navItemsTwo.innerHTML = nav_Links;
+
+footNav.append(navItemsTwo)
+footerNav.append(footNav)
+
+footerItems.append(footLogo)
+footerItems.append(footerNav)
+
+let footerItemsTwo = document.createElement('div');
+footerItemsTwo.className = 'footerItemTwo';
+
+let footerSocials = document.createElement('div');
+footerSocials.className = 'footerArraySocials';
+
+// An array with a for loop to hold and iterate all the socials logo in the footer container 
+
+let socialArr = [
+    "./frontendMentorDocs/loopstudios-landing-page-main/images/icon-twitter.svg",
+    "./frontendMentorDocs/loopstudios-landing-page-main/images/icon-instagram.svg",
+    "./frontendMentorDocs/loopstudios-landing-page-main/images/icon-pinterest.svg",
+    "./frontendMentorDocs/loopstudios-landing-page-main/images/icon-facebook.svg"
+]
+
+// This empty backticks will store all the image after running through the loop
+
+let socialHolder = ``
+for (let i = 0; i < socialArr.length; i += 1) {
+  socialHolder += `<img src="${socialArr[i]}">`;
+  }
+
+let socials = document.createElement("div")
+socials.className = "social"
+socials.innerHTML = socialHolder
+footerSocials.append(socials);
+
+footerItemsTwo.append(footerSocials)
+let footerCopy = document.createElement('div');
+footerCopy.className = 'footerCopyRight';
+let footerPara = document.createElement('p');
+footerPara.innerText = '© 2021 Loopstudios. All rights reserved.'
+
+footerCopy.append(footerPara)
+
+footerItemsTwo.append(footerCopy)
+
+footerSection.append(footerItems);
+footerSection.append(footerItemsTwo);
+
   // Font style markup for every html elements in this landing page
   let style = document.createElement('style');
   style.innerHTML = `

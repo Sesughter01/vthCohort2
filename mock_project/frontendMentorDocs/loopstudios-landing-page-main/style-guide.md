@@ -51,3 +51,21 @@ font-family: 'Alata', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
 
 <img src="/mock_project/frontendMentorDocs/loopstudios-landing-page-main/images/logo.svg" alt="">
+
+let footerItems = `
+  <div>
+  <img src="/mock_project/frontendMentorDocs/loopstudios-landing-page-main/images/logo.svg">
+  <ul>
+  <li>About<li>
+  <li>Careers<li>
+  <li>Events<li>
+  <li>Products<li>
+  <li>Supports<li>
+  </ul>
+  <div>
+  <p>2023 | Loopstudios. All rights reserved</p>
+  </div>
+  </div>
+  `
+
+  footerSection.innerHTML = footerItems

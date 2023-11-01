@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: blue;
 }
 
 .nav{
@@ -74,6 +75,7 @@ header a:active{
 
 .side_item{
     margin-block:2rem ;
+    background-color: red;
 }
 
 /* Property Cards */
@@ -99,3 +101,4 @@ header a:active{
     /* font-size: 2.5em; */
     /* color: whitesmoke; */
 }
+

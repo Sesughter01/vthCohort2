@@ -1,1 +1,38 @@
-/*  */
+/* # Learning Color Funcion  */
+
+/* Grid css  */
+body{
+    height: 100vh;
+}
+.parent_section{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+.gridbox{
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(auto-fit,minimax(200px,1fr));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+
+
+}
+#red{
+    background-color: hsl(0,100%,50%);
+}
+#green{
+    background-color: hsl(120,100%,30%);
+}
+#blue{
+    background-color: hsl(240,100%,30%);
+}
+#radishgreen{
+    background:hsl(90,100%,30%) ;
+}
+#lemon{
+    background-color: hsl(360,100%,30%);
+}

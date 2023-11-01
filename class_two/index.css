@@ -42,6 +42,7 @@ p{
 
  .main_header{
     display: flex;
+    flex-direction: row;
  }
 
 /* Combinator selectors */
@@ -66,3 +67,20 @@ p{
 /* Sibling */
 
 
+main{
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+#first{
+    width: 25%;
+    height: 100px;
+}
+#second{
+    width: 25%;
+    height: 100px;
+}
+#third{
+    width: 25%;
+    height: 100px;
+}

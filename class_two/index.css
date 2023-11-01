@@ -52,6 +52,7 @@ p{
 
  header ul{
     display: flex;
+    flex-direction: row;
  }
  /* child selector */
  nav > li{

@@ -4,6 +4,7 @@
 
 
 .mainHeader{
+    background-color: blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,6 +75,7 @@ header a:active{
 
 .side_item{
     margin-block:2rem ;
+    background-color: red;
 }
 
 /* Property Cards */

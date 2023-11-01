@@ -58,7 +58,7 @@ header a:hover{
 header a:active{
     color: green;
 }
-.main_section{
+#section_main{
     display: flex;
     /* justify-content: space-around; */
     color:hsl(233, 8%, 79%);

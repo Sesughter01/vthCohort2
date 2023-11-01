@@ -1,1 +1,44 @@
-/*  */
+/* # Learning Color function */
+
+/* Grid css */
+body{
+    height: 100vh;
+}
+.parent_section{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+.gridbox{
+    display:grid;
+    width: 50%;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    
+
+}
+
+/* Style color boxes */
+
+#red{
+    background-color:hsl(0,50%,50%) ;
+}
+#green{
+    background-color:hsl(120,100%,30%) ;
+}
+#blue{
+    background-color:hsl(240,100%,30%) ;
+}
+#lemon{
+    background-color:hsl(90,100%,30%) ;
+}
+#redissh{
+    background-color:hsl(360,100%,30%) ;
+}
+#bluish_red{
+    background-color:hsl(270,100%,30%) ;
+}

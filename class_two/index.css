@@ -16,8 +16,7 @@ body{
 nav{
     /* background-color: brown; */
 }
-
- header img{
+ img{
    
  width: 200px;
 }
@@ -40,8 +39,9 @@ p{
 
 /* Class selectors are used to select multiple elements in order to same styles to them */
 
- .main_header{
+.main_header{
     display: flex;
+    flex-direction: row;
  }
 
 /* Combinator selectors */

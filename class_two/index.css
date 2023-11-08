@@ -17,9 +17,9 @@ nav{
     /* background-color: brown; */
 }
 
- header img{
-   
- width: 200px;
+  img{
+   display: inline;
+  width: 200px;
 }
 
 p{

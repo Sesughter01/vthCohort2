@@ -40,7 +40,7 @@ p{
 
 /* Class selectors are used to select multiple elements in order to same styles to them */
 
- .main_header{
+.main_header{
     display: flex;
     flex-direction: row;
  }
@@ -58,10 +58,22 @@ p{
  nav > li{
     background-color: blue;
  }
+ .main{
+    display: flex;
+    flex-direction: row;
+ }
+ .main img{
+    height: 100px;
+    width: 200px;
+ }
 
- ul li{
-    list-style: none;
-    margin-inline: 2rem;
+ .boxmodel{
+    width: 100%;
+    height: 20px;
+    padding: 5px;
+    border: 5px rgb(39, 25, 25);
+    margin: 0;
+    gap: 20px;
 }
 
 /* Sibling */
@@ -83,4 +95,77 @@ gap: 20px;
 #third{
     width: 25%;
     height: 100px;
+}
+.solid{
+    border: 3px black;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: medium;
+}
+.groove{
+    border: 2px black;
+    outline-color: aqua;
+    outline-style: groove;
+}
+.ridge{
+    margin: 20px;
+    background-color: purple;
+    border: 1px black;
+    outline: 1px red;
+    outline-offset: 15px;
+}
+.color{
+    color: brown;
+    background-color: yellowgreen;
+    text-indent: 30px;
+    letter-spacing: 10px;
+    line-height: 1.5;
+    word-spacing: 10px;
+    white-space: nowrap;
+}
+#one{
+    text-align: center;
+    
+}
+#two{
+    text-align: left;
+}
+#three{
+    text-align: right;
+}
+.dotted{
+    text-align: justify;
+}
+#first{
+    text-align-last: center;
+}
+#second{
+    text-align-last: justify;
+}
+#third{
+    text-align-last: right;
+}
+.text{
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 5px;
+    text-transform: lowercase;
+}
+.outline{
+    text-shadow: 2px 2px 5px blueviolet;
+    font-style: italic;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-size: 30px;
+}
+.font{
+    font-family: "Times New Roman", Times, serif;
+
+}
+.last{
+    font-style: oblique;
+    font-weight: bold;
+    font-variant: normal;
+    font-size: 0.70rem;
 }

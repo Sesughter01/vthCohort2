@@ -1,0 +1,78 @@
+@import url(https://fonts.google.com/specimen/Inter);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+
+}
+:root{
+    /* primary color */
+    --soft_orange: hsl(35, 77%, 62%);
+    --soft_red: hsl(5, 85%, 63%);
+
+    /* Neutral Colors*/
+    --off_white: hsl(36, 100%, 99%);
+    --grayish_blue: hsl(233, 8%, 79%);
+    --dark_grayish_blue: hsl(236, 13%, 42%);
+    --very_dark_blue: hsl(240, 100%, 5%);
+    --very_dark_blue_transparent: rgba(39, 29, 88, 0.281);
+
+    /* Typography */
+    /* Font Sizes*/
+    --paragraph_font_size: 15px;
+    /* Font weight */
+    --regular 
+}
+/* General Style*/
+.main_wrapper{
+    padding: 1rem;
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--dark_grayish_blue);
+}
+
+/* Main Styles */
+.mainheader{
+    display: flex;
+    justify-content: space-between;
+}
+/*Nav Bar*/
+.navbar{
+    background-color:var(--very_dark_blue_transparent) ;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.navlist{
+    position: absolute;
+    background-color: var(--off_white);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-block-start: 30%;
+    padding-inline-start: 2rem;
+   
+    }
+
+
+
+/*Navlist style*/
+.navitem{
+    margin-block: 2rem;
+}
+/*menucontainer*/
+.menucontainer{
+    background-color: blue;
+    width: 2rem;
+    color
+}

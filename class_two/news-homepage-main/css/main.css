@@ -164,3 +164,9 @@ max-width:100% ;
     color: var(--off_white);
     letter-spacing:0.5rem;
 }
+.box{
+    color: var(--very_dark_blue);
+}
+.color{
+    color: var(--soft_orange);
+}

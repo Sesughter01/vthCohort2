@@ -100,7 +100,7 @@ a{
 /* Menu Container Styles */
 
 .menuContainer{
-    
+
     
     width: 2rem;
     color: var(--off_white);
@@ -163,4 +163,49 @@ max-width:100% ;
     text-transform: uppercase;
     color: var(--off_white);
     letter-spacing:0.5rem;
+}
+/*Box styling*/
+.box{
+    background-color: var(--very_dark_blue);
+    width: 290px;
+    height: 480px;
+    line-height: 3;
+    padding-inline: 13px;
+    
+}
+.t1{
+    color: var(--off_white);
+}
+.color{
+    color: var(--soft_orange);
+}
+.thin{
+    color: var(--off_white);
+    font-weight: lighter;
+    font-size: 12px;
+}
+/*foot styling*/
+.foot{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.p1{
+ color: var(--grayish_blue);
+}
+.pt{
+    color: var(--very_dark_blue);
+}
+h6{
+    color: var(--dark_grayish_blue);
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+.word{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    left: 250px; 
+    
 }

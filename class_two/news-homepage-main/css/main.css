@@ -64,6 +64,10 @@ a{
     padding-block: 1rem;
 }
 
+/* Logo styles */
+
+
+
 /* Navbar Styles */
 .navbar{
     background-color:var(--very_dark_blue_transparent) ;
@@ -102,18 +106,33 @@ a{
 .menuContainer{
     
     
-    width: 2rem;
-    color: var(--off_white);
    
 }
 
+/* Hamburger Styles */
 
-.menuButton{
-    margin-block:3px;
-    padding: 0.5px;
-    width: 100%;
+.hamburger, .hamburger::before, .hamburger::after{
+    display: block;
+    width: 2rem;
     height: 3px;
     background-color: var(--very_dark_blue);
+
+}
+.hamburger{
+    position: absolute;
+    right: 1rem;
+}
+.hamburger::before{
+    content: "";
+    position: absolute;
+    top: -6px;
+
+}
+.hamburger::after{
+    content: "";
+    position: absolute;
+    top: 6px;
+
 }
 
 /* Section One Styles */

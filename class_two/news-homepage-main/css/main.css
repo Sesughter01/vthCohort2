@@ -164,9 +164,50 @@ max-width:100% ;
     color: var(--off_white);
     letter-spacing:0.5rem;
 }
-.box{
-    color: var(--very_dark_blue);
+.foot{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
+
+.box{
+    width: 300px;
+    height: 400px;
+    background-color: var(--very_dark_blue);
+    padding-inline: 10px;
+    padding-block: 20px;
+    line-height: 20px;
+    
+}
+
 .color{
     color: var(--soft_orange);
+}
+
+.t1{
+    color: var(--off_white);
+}
+
+.thin{
+    color: var(--grayish_blue);
+}
+
+.p1{
+    color: var(--grayish_blue);
+}
+
+.pt{
+    color: var(--very_dark_blue);
+    
+}
+
+h6{
+    color: var(--dark_grayish_blue);
+    font-weight: lighter;
+}
+.word{
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    left: 30%;
 }

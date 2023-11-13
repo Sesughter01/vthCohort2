@@ -51,6 +51,10 @@ a{
     color: var(--very_dark_blue);
    font-weight: var(--regular_fw);
 }
+hr{
+
+    border-color: var(--grayish_blue);
+}
 
 /* Main Styles */
 
@@ -183,4 +187,40 @@ max-width:100% ;
     text-transform: uppercase;
     color: var(--off_white);
     letter-spacing:0.5rem;
+}
+
+/* Section two Styles */
+
+.section_two{
+    background-color: var(--very_dark_blue);
+    padding: 1rem;
+   
+}
+
+/* Sec_title styles */
+.section_title{
+    margin-block-end: 1rem;
+}
+.section_title .title{
+    color: var(--soft_orange);
+}
+
+/* Section_content styles */
+/* .section_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+.section_content .sub_section{
+    padding-block: 2rem;
+}
+
+.section_content .sub_section .sub_section-title {
+  margin-block-end: 1rem;
+}
+.section_content .sub_section .sub_section-title h3{
+  color: var(--off_white);
+}
+.section_content .sub_section .sub_section-subtitle p{
+  color: var(--grayish_blue);
 }

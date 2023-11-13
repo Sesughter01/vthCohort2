@@ -1,66 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend | Class 2</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./news-homepage-main/css/main.css">
+  
+  <title>Charles A | News homepage</title>
 
-    <style>
-        
-        
-
-    </style>
 </head>
+<body>
+  <main class="main_wrapper">
+      <header class="mainHeader">
+        <!-- Logo element -->
+          <div class="logo">
+            <img src="./news-homepage-main/assets/images/logo.svg" alt="">
+            
+          </div>
 
-<body >
-
-    <!--INTERNAL CSS-->
-    <!-- Internal css are css styles that are included or contained inside an html file using styles element  
-    
-        yhfddfsfdfghjhkjk
-    
-    -->
-
-    <header class="main_header">
-        <img src="/class_two/assets/logo/logo.svg" alt="">
-         <h2>Magboro City Ville</h2>
-         <nav>
-             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Property Gallery</li>
-                <li>Prices</li>
-                <li>Contact Us</li>
-             </ul>
-
-              <li>Testimonialss</li>
-         </nav>
-
-         <div class="logReg">
-            <a href="#">Sign in</a>
-            <a href="#">Sign up</a>
-         </div>
-
-
-    </header>
-    <main>
-
-        <img src="./assets/logo/logo.svg" alt="">
-        <img src="./assets/logo/logo.svg" alt="">
-        <img src="./assets/logo/logo.svg" alt="">
+          <!-- input element toggle hamburger menu on and off -->
+          <input type="checkbox" name="menuButton" id="input" hidden>
         
+          <nav class="navbar">
+            <ul class="navlist">
+
+               <li class="navItem"><a href="#" class="navList">Home</a></li>
+               <li class="navItem"><a href="#" class="navList">New</a></li>
+               <li class="navItem"><a href="#" class="navList">Popular</a></li>
+               <li class="navItem"><a href="#" class="navList">Trending</a></li>
+               <li class="navItem"><a href="#" class="navList">Categories</a></li>
+
+            </ul>
+              
+              
+              
+              
+              
+          </nav>    
+          
+        <div class="menuContainer">
+           <label for="menuButton">
+              <span class="hamburger">
+                
+              </span>
+           </label>
+        </div>
+
+      </header>
+
+       <section class="section_one">
+           <div class="wrapper">
+             <div class="img">
+                 <img src="./news-homepage-main//assets/images/image-web-3-mobile.jpg" alt="" class="mian_img">
+             </div>
+             <div class="text">
+               
+               <h1 class="mainText">
+                 The Bright Future of Web 3.0?
+               </h1>  
+ 
+               <p class="subtext">
+                     We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                     But is it really fulfilling its promise?
+               </p>
+                 
+ 
+             </div>
+
+           </div> 
+            <div class="link">
+                  <a href="#" class="cta">Read more</a>
+            </div>
+        
+       </section>
+
+       
+
+        
+
+        New 
+
+        Hydrogen VS Electric Cars
+        Will hydrogen-fueled cars ever catch up to EVs?
+
+        The Downsides of AI Artistry
+        What are the possible adverse effects of on-demand AI image generation?
+
+        Is VC Funding Drying Up?
+        Private funding by VC firms is down 50% YOY. We take a look at what that means.
+
+        01
+        Reviving Retro PCs
+        What happens when old PCs are given modern upgrades?
+
+        02
+        Top 10 Laptops of 2022
+        Our best picks for various needs and budgets.
+
+        03
+        The Growth of Gaming
+        How the pandemic has sparked fresh opportunities.
         
        
-        <p id="first">Lorem ipsum </p> 
-        <p id="second">Lorem ipsum </p> 
-        <p id="third">Lorem, ipsum</p>
-
-        
-
-       
-    </main>
-    
+  </main>
 </body>
 </html>

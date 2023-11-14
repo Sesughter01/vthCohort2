@@ -18,15 +18,16 @@
     <!-- Introduction Javascript -->
 
     <!-- Javascript Can Change HTML Content -->
- <div class="change_html_content">
-     <h2>What Can JavaScript Do?</h2>
  
-      <p id="demo">JavaScript can change HTML content.</p>
- 
-     <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Super Eagles!</button> <!--Inline Javascript-->
-     
-
- </div>
+    <div class="change_html_content">
+        <h2>What Can JavaScript Do?</h2>
+    
+       
+          <p id="name">JavaScript can change HTML content.</p>
+        
+          <button type="button" onclick='document.getElementById("name").innerHTML = "happiness"'>Click Me!</button>
+           
+ </div><br>
 
  <div class="change_attr_values">
     
@@ -39,27 +40,41 @@
         <img id="myImage" src="../assets/pic_bulboff.gif" style="width:100px">
 
         <button onclick="document.getElementById('myImage').src='../assets/pic_bulboff.gif'">Turn off the light</button>
- </div>
+ </div><br>
 
 
  <div class="change_style_values">
 
-    <p>Welcome to Javascript</p>
+    <p> Javascript can change_style_values</p>
 
-    <p id="sent">Hello Javascript</p>
+    <p id="observe">Welcome to Vnicom Tech Hub</p>
 
-    <button onclick="document.getElementById('sent').style.fontSize='50px'">Change</button>
+    <button onclick="document.getElementById('observe').style.fontSize='30px'">Change</button>
 
-    <img src="/assets/tables.png" alt="">
-  </div>  
+  </div> <br> 
 
+<div class="hide_html values">
 
+    <p id="how">JavaScript can hide HTML elements.</p>
+
+    <button type="button" onclick="document.getElementById('how').style.display='none'">Click Me!</button>
+
+</div><br>
+<div class="show_html values">
+    <p>JavaScript can show hidden HTML elements.</p>
+
+    <p id="demo" style="display:none">Hello JavaScript!</p>
+    
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+</div>    
+
+<img src="/assets/tables.png" alt="">
  <div class="myDom">
     <img src="../assets/My DOM 1.png" alt="" srcset="">
- </div>
+ </div><br>
 
  <script >
-         let doc = document.body.querySelector('div').style.backgroundColor="red";
+         let doc = document.body.querySelector('div').style.backgroundColor="white";
  </script>
     
 

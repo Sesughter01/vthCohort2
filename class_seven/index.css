@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0
+  
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+div{
+    display: inline-block;
+    background-color: azure;
+    width: 50vw;
+    height: ;
+}
+img{
+    width: 50px;
+}

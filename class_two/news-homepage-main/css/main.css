@@ -51,7 +51,14 @@ a{
     color: var(--very_dark_blue);
    font-weight: var(--regular_fw);
 }
+hr{
 
+    border-color: var(--grayish_blue);
+}
+
+#input{
+   opacity: 0;
+}
 /* Main Styles */
 
 /* Header Styles */
@@ -64,6 +71,10 @@ a{
     padding-block: 1rem;
 }
 
+/* Logo styles */
+
+
+
 /* Navbar Styles */
 .navbar{
     background-color:var(--very_dark_blue_transparent) ;
@@ -73,7 +84,7 @@ a{
     left: 0;
     right: 0;
     transform: translateX(150%);
-    transition: transform ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 500ms ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* Nav List Styles  */
@@ -100,43 +111,67 @@ a{
 /* Menu Container Styles */
 
 .menuContainer{
+ display: block;
+ position: absolute;   
+ right: 1rem;
     
-    
-    width: 2rem;
-    color: var(--off_white);
    
 }
 
-
 .menuButton{
-    margin-block:3px;
-    padding: 0.5px;
-    width: 100%;
-    height: 3px;
-    background-color: var(--very_dark_blue);
+    position: absolute;
+    z-index: 1000;
 }
-/* hamburger styles*/
+
+/* Hamburger Styles */
+
 .hamburger, .hamburger::before, .hamburger::after{
     display: block;
+    position: absolute;
     width: 2rem;
     height: 3px;
     background-color: var(--very_dark_blue);
+    z-index: 1000;
+
 }
+
 .hamburger{
-    position: absolute;
-    right:1rem;
+  
+    right: 1rem;
 }
 .hamburger::before{
     content: "";
-    position: absolute;
-    top:-6px;
+   
+    top: -6px;
 
 }
 .hamburger::after{
     content: "";
-    position: absolute;
-    top:6px;
+ 
+    top: 6px;
+
 }
+/* Active State */
+#input:checked{
+    position: absolute;
+    right: 1rem;
+    z-index: 1000;
+}
+#input:checked ~ .menuContainer .hamburger{
+    transform:rotate(0.625turn);
+}
+#input:checked ~ .menuContainer .hamburger::before{
+    transform:rotate(90deg) translateX(6px);
+}
+#input:checked ~ .menuContainer .hamburger::after{
+    opacity:0;
+}
+#input:checked + .navbar{
+    transform: translateX(0%);
+    z-index: 500;
+}
+
+
 
 /* Section One Styles */
 
@@ -169,7 +204,6 @@ max-width:100% ;
     line-height: 1.5;
 }
 
-
 /* Main Link Styles */
 
 .section_one .link {
@@ -187,53 +221,40 @@ max-width:100% ;
     color: var(--off_white);
     letter-spacing:0.5rem;
 }
+
+/* Section two Styles */
+
 .section_two{
     background-color: var(--very_dark_blue);
     padding: 1rem;
-    height: 450px;
-    line-height: 40px;
+   
 }
-.title{
+
+/* Sec_title styles */
+.section_title{
+    margin-block-end: 1rem;
+}
+.section_title .title{
     color: var(--soft_orange);
 }
-.sub_section .sub_section-title{
- color: var(--off_white);
-}
-.sub_section-subtitle{
-    color:var(--dark_grayish_blue)
-}
-.hr{
- color: var(--grayish_blue);
-}
-/*section_three styling*/
 
- .section_three{
+/* Section_content styles */
+/* .section_content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
- } 
- 
- .section_three,.image{
-    margin-block: 2rem;
-    display: flex;
-    flex-direction: column;
- } 
- .sub_section-three{
-    display: flex;
-    flex-direction: column;
-    position:absolute;
-    
- }
-.section_three-heading{
-    color: var(--grayish_blue);
-    
+    justify-content: space-between;
+} */
+.section_content .sub_section{
+    padding-block: 2rem;
 }
-.section_three-subheading, .h2{
- color: var(--very_dark_blue);
 
+.section_content .sub_section .sub_section-title {
+  margin-block-end: 1rem;
 }
-h4{
-    color: var(--dark_grayish_blue);
-    font-size: medium;
-    font-weight: 550;
+.section_content .sub_section .sub_section-title h3{
+  color: var(--off_white);
 }
+.section_content .sub_section .sub_section-subtitle p{
+  color: var(--grayish_blue);
+}
+

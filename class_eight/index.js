@@ -86,3 +86,7 @@ myArray[0] = 'toyota'
 // console.log(myObject )
 
 // alert(1%2)
+function Content(){
+  document.getElementById("text_one").innerHTML= "Change content";
+  document.getElementById("text_two").innerHTML= "Change content";
+}

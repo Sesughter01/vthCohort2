@@ -115,6 +115,28 @@ a{
     height: 3px;
     background-color: var(--very_dark_blue);
 }
+/* hamburger styles*/
+.hamburger, .hamburger::before, .hamburger::after{
+    display: block;
+    width: 2rem;
+    height: 3px;
+    background-color: var(--very_dark_blue);
+}
+.hamburger{
+    position: absolute;
+    right:1rem;
+}
+.hamburger::before{
+    content: "";
+    position: absolute;
+    top:-6px;
+
+}
+.hamburger::after{
+    content: "";
+    position: absolute;
+    top:6px;
+}
 
 /* Section One Styles */
 
@@ -147,6 +169,7 @@ max-width:100% ;
     line-height: 1.5;
 }
 
+
 /* Main Link Styles */
 
 .section_one .link {
@@ -164,50 +187,53 @@ max-width:100% ;
     color: var(--off_white);
     letter-spacing:0.5rem;
 }
-.foot{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.box{
-    width: 300px;
-    height: 400px;
+.section_two{
     background-color: var(--very_dark_blue);
-    padding-inline: 10px;
-    padding-block: 20px;
-    line-height: 20px;
-    
+    padding: 1rem;
+    height: 450px;
+    line-height: 40px;
 }
-
-.color{
+.title{
     color: var(--soft_orange);
 }
-
-.t1{
-    color: var(--off_white);
+.sub_section .sub_section-title{
+ color: var(--off_white);
 }
+.sub_section-subtitle{
+    color:var(--dark_grayish_blue)
+}
+.hr{
+ color: var(--grayish_blue);
+}
+/*section_three styling*/
 
-.thin{
+ .section_three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ } 
+ 
+ .section_three,.image{
+    margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+ } 
+ .sub_section-three{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    
+ }
+.section_three-heading{
     color: var(--grayish_blue);
-}
-
-.p1{
-    color: var(--grayish_blue);
-}
-
-.pt{
-    color: var(--very_dark_blue);
     
 }
+.section_three-subheading, .h2{
+ color: var(--very_dark_blue);
 
-h6{
-    color: var(--dark_grayish_blue);
-    font-weight: lighter;
 }
-.word{
-    text-align: center;
-    justify-content: center;
-    position: absolute;
-    left: 30%;
+h4{
+    color: var(--dark_grayish_blue);
+    font-size: medium;
+    font-weight: 550;
 }

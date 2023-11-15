@@ -85,4 +85,4 @@ myArray[0] = 'toyota'
 
 // console.log(myObject )
 
-// alert(1%2)
+// alert(1%2)z

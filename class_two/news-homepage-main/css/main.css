@@ -56,6 +56,9 @@ hr{
     border-color: var(--grayish_blue);
 }
 
+#input{
+   opacity: 0;
+}
 /* Main Styles */
 
 /* Header Styles */
@@ -81,7 +84,7 @@ hr{
     left: 0;
     right: 0;
     transform: translateX(150%);
-    transition: transform ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 500ms ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* Nav List Styles  */
@@ -108,37 +111,67 @@ hr{
 /* Menu Container Styles */
 
 .menuContainer{
-    
+ display: block;
+ position: absolute;   
+ right: 1rem;
     
    
+}
+
+.menuButton{
+    position: absolute;
+    z-index: 1000;
 }
 
 /* Hamburger Styles */
 
 .hamburger, .hamburger::before, .hamburger::after{
     display: block;
+    position: absolute;
     width: 2rem;
     height: 3px;
     background-color: var(--very_dark_blue);
+    z-index: 1000;
 
 }
 
 .hamburger{
-    position: absolute;
+  
     right: 1rem;
 }
 .hamburger::before{
     content: "";
-    position: absolute;
+   
     top: -6px;
 
 }
 .hamburger::after{
     content: "";
-    position: absolute;
+ 
     top: 6px;
 
 }
+/* Active State */
+#input:checked{
+    position: absolute;
+    right: 1rem;
+    z-index: 1000;
+}
+#input:checked ~ .menuContainer .hamburger{
+    transform:rotate(0.625turn);
+}
+#input:checked ~ .menuContainer .hamburger::before{
+    transform:rotate(90deg) translateX(6px);
+}
+#input:checked ~ .menuContainer .hamburger::after{
+    opacity:0;
+}
+#input:checked + .navbar{
+    transform: translateX(0%);
+    z-index: 500;
+}
+
+
 
 /* Section One Styles */
 
@@ -224,3 +257,4 @@ max-width:100% ;
 .section_content .sub_section .sub_section-subtitle p{
   color: var(--grayish_blue);
 }
+

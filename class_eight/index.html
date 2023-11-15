@@ -4,19 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Eight | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>A Fish Farming<br> Investment Platform</h1>
-    <img src="/class_eight/assets/photo-1544717302-de2939b7ef71 (image) (2).png">
-    <img src="/class_eight/assets/whatsapp logo.png">
 
-    <p>Join the Fish Farm Club and<br> benefit from amazing and profitable plans</p>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>Introduction to Functions</h1>
+        <p>Use functions to change content</p> 
+      </div>
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Content One</h3>
+            <p id="text_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p id="text_2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
 
-    <button>INVEST NOW</button>
-    <button>TAKE A TOUR</button>
+            <button type="button" onclick="contentOne()" class="btn btn-primary">Change Content</button>
+          </div>
+          <div class="col-sm-4">
+            <h3>Content Two</h3>
+            <p id="text_3">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p id="text_4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
 
+            <button type="button" class="btn btn-primary" onclick="overWriteme()">Change Content</button>
+          </div>
+          <div class="col-sm-4">
+            <h3>Content Three</h3>        
+            <p id="text_5">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p id="text_6">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+
+            <button type="button" class="btn btn-primary" onclick="myAlert()">Change Content</button>
+          </div>
+        </div>
+
+        <div class="row p-5">
+            <div class="col p-2 text-center">
+                <button type="button" onclick="window.print()" class="btn btn-danger">Print Document</button>
+
+            </div>
+        </div>
+      </div>
      
-     <h1>New Document</h1>
     <script src="index.js"></script>
 
 </body>

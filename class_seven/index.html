@@ -20,6 +20,8 @@
     <!-- Javascript Can Change HTML Content -->
  <div class="change_html_content">
      <h2>What Can JavaScript Do?</h2>
+     <button type="button" onclick="textFunction()">Set text to center</button>
+
  
       <p id="demo">JavaScript can change HTML content.</p>
  
@@ -52,27 +54,16 @@
 
     <img src="/assets/tables.png" alt="">
   </div>  
+  <button type="button" onclick="myFunction()">Set background color</button>
 
-
- <div class="myDom">
-    <img src="../assets/My DOM 1.png" alt="" srcset="">
- </div>
-
- <script >
-         let doc = document.body.querySelector('div').style.backgroundColor="red";
- </script>
-
-    <h1>JavaScript Assignments</h1>
-    <h2>Simple Assignment</h2>
-    <h3>The = Operator</h3>
-    
-    <p id="demo"></p>
-    
-    <script>
-    let x = 10;
-    document.getElementById("demo").innerHTML = "Value of x is: " + x;
-    </script>
-
+  <script>
+  function myFunction() {
+    document.body.style.backgroundColor = "blue";
+  }
+  function textFunction() {
+    document.body.style.textAlign = "center";
+  }
+  </script>
 
 </body>
 </html>

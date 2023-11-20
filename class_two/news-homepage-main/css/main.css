@@ -84,7 +84,7 @@ hr{
     left: 0;
     right: 0;
     transform: translateX(150%);
-    transition: transform 500ms ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 2000ms ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* Nav List Styles  */
@@ -257,22 +257,4 @@ max-width:100% ;
 .section_content .sub_section .sub_section-subtitle p{
   color: var(--grayish_blue);
 }
-/*Section three Styling*/
 
-.section_three{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    gap: 50px;
-}
-.heading{
-    color: var(--grayish_blue);
-}
-.sub-heading{
-    color: var(--very_dark_blue);
-    
-}
-.content{
-    color: var(--dark_grayish_blue);
-    font-weight: lighter;
-}

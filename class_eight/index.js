@@ -1,3 +1,4 @@
+
 // This comment is Javascript : The double forward slash is used for single line comments
 
 /*
@@ -86,3 +87,19 @@ myArray[0] = 'toyota'
 // console.log(myObject )
 
 // alert(1%2)
+
+function contentOne(){
+  document.getElementById('text_1').innerHTML = "Hi good job!" ;
+  document.getElementById('text_2').innerHTML = "Well done keep going!";
+
+  // text1 = "Hi good job!";
+  // text2 = "Well done keep going!";
+}
+
+function overWriteme(){
+  document.write('Learning JavaScript');
+}
+function myAlert(){
+  alert('Learning JavaScript');
+}
+

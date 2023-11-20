@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 /* # Learning Color Funcion  */
 
 /* Grid css  */
+=======
+/* # Learning Color function */
+
+/* Grid css */
+>>>>>>> master
 body{
     height: 100vh;
 }
@@ -11,13 +17,20 @@ body{
     align-items: center;
 }
 .gridbox{
+<<<<<<< HEAD
     display: grid;
     width: 50%;
     grid-template-columns: repeat(auto-fit,minimax(200px,1fr));
+=======
+    display:grid;
+    width: 50%;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+>>>>>>> master
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 2rem;
+<<<<<<< HEAD
 
 
 }
@@ -35,4 +48,29 @@ body{
 }
 #lemon{
     background-color: hsl(360,100%,30%);
+=======
+    
+
+}
+
+/* Style color boxes */
+
+#red{
+    background-color:hsl(0,50%,50%) ;
+}
+#green{
+    background-color:hsl(120,100%,30%) ;
+}
+#blue{
+    background-color:hsl(240,100%,30%) ;
+}
+#lemon{
+    background-color:hsl(90,100%,30%) ;
+}
+#redissh{
+    background-color:hsl(360,100%,30%) ;
+}
+#bluish_red{
+    background-color:hsl(270,100%,30%) ;
+>>>>>>> master
 }

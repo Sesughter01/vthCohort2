@@ -258,19 +258,21 @@ max-width:100% ;
   color: var(--grayish_blue);
 }
 /*Section three Styling*/
+
 .section_three{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    gap: 50px;
 }
 .heading{
     color: var(--grayish_blue);
 }
 .sub-heading{
     color: var(--very_dark_blue);
+    
 }
 .content{
     color: var(--dark_grayish_blue);
     font-weight: lighter;
-
 }

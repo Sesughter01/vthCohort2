@@ -11,131 +11,65 @@
 
 </head>
 <body>
-  <main class="main_wrapper">
-      <header class="mainHeader">
-        <!-- Logo element -->
-          <div class="logo">
-            <img src="./assets/images/logo.svg" alt="">
-            
+
+        <div class="col col-md-6 col-lg-4 mx-auto">
+             <div class="image">
+                <img src="/assets/pizza1.jpeg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+                
+             </div>
+          <div class="col col-md-6 col-lg-4 mx-auto">
+             <div class="image">
+                <img src="/assets/pizza1.jpeg">
+             </div>
+            <div class="col col-md-6 col-lg-4 mx-auto">
+              <div class="image">
+                 <img src="/assets/pizza1.jpeg" style="width: 100%;" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+              </div>
           </div>
 
-          <!-- input element toggle hamburger menu on and off -->
-          <input type="checkbox" name="menuButton" id="input" hidden>
-        
-          <nav class="navbar">
-            <ul class="navlist">
+    
+  <div class="JS Datatypes">
+        <div class="Booleans" style="display: flex; flex-direction: column; color: blue;">
+         <h2>JavaScript Booleans</h2>
 
-               <li class="navItem"><a href="#" class="navList">Home</a></li>
-               <li class="navItem"><a href="#" class="navList">New</a></li>
-               <li class="navItem"><a href="#" class="navList">Popular</a></li>
-               <li class="navItem"><a href="#" class="navList">Trending</a></li>
-               <li class="navItem"><a href="#" class="navList">Categories</a></li>
+         <p>Booleans can have two values: true or false:</p>
 
-            </ul>
-              
-              
-              
-              
-              
-          </nav>    
-          
-        <div class="menuContainer">
-            <div class="menuButton">
-                 
-              
-
-            </div>
-            <div class="menuButton">
-               
-              
-            </div>
-            <div class="menuButton">
-               
-              
-            </div>
+        <p id="demo"></p>
         </div>
+</div>
 
-      </header>
+<script>
+let x = 5;
+let y = 5;
+let z = 6;
 
-       <section class="section_one">
-           <div class="wrapper">
-             <div class="img">
-                 <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="mian_img">
-             </div>
-             <div class="text">
-               
-               <h1 class="mainText">
-                 The Bright Future of Web 3.0?
-               </h1>  
- 
-               <p class="subtext">
-                     We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-                     But is it really fulfilling its promise?
-               </p>
-                 
- 
-             </div>
+document.getElementById("demo").innerHTML =
+(x == y) + "<br>" + (x == z);
+</script>
 
-           </div> 
-            <div class="link">
-                  <a href="#" class="cta">Read more</a>
-            </div>
-        
-       </section>
+<div class="arrays" style=" display:flex; flex-direction: column; color: rgb(255, 0, 149); ">
+
+  <h2>JavaScript Arrays</h2>
+
+  <p>Array indexes are zero-based, which means the first item is [0].</p>
+
+  <p id="demo"></p>
+</div>
 
 
+ <div class="objects">
+  <h2>JavaScript Objects</h2>
 
-       <section class="box">
-        <h1 class="color">New</h1><br>
-        <p><h3 class="t1">Hydrogen VS Electric Cars</h3></p><br>
-        <h6 class="thin">Will hydrogen-fueled cars ever catch up</h6>
-        <h6 class="thin">to EVs?</h6><br>
-        <hr>
-        <br>
+  <p id="demo"></p>
+</div>
 
-        <h3 class="t1">The Downsides of AI Artistry</h3><br>
-        <h6 class="thin">What are the possible adverse effects of</h6>
-        <h6 class="thin">on-demand AI image generation?</h6><br>
-        <hr>
-        <br>
-        <h3 class="t1">Is VC Funding Drying Up?</h3><br>
-        <h6 class="thin">Private funding by VC firms is down 50%</h6>
-        <h6 class="thin">YOY. We take a look at what that means.</h6>
-       </section>
-       <br><br>
+<script>
+  const cars = ["Saab","Volvo","BMW"];
+  
+  document.getElementById("demo").innerHTML = cars[0];
+  </script>
+  
 
-       <div class="foot">
 
-        <div class="PCs">
-        <img src="/class_two/news-homepage-main/assets/images/image-retro-pcs.jpg" alt="">
-        <div class="word">
-        <h1 class="p1">01</h1>
-        <h3 class="pt">Reviving Retro PCs</h3>
-        <h6>What happens when old PCs</h6>
-        <h6>are given modern upgrades?</h6>
-        </div>
-        </div>
-
-        <div class="Laptops">
-        <img src="/class_two/news-homepage-main/assets/images/image-top-laptops.jpg" alt="">
-        <div class="word">
-        <h1 class="p1">02</h1>
-        <h3 class="pt">Top 10 Laptops of 2022</h3>
-        <h6> Our best picks for various</h6>
-        <h6> needs and budgets.</h6>
-        </div>
-        </div>
-
-         <div class="Gaming">
-        <img src="/class_two/news-homepage-main/assets/images/image-gaming-growth.jpg" alt="">
-        <div class="word">
-        <h1 class="p1">03</h1>
-        <h3 class="pt">The Growth of Gaming</h3>
-        <h6>How the pandemic has</h6>
-        <h6> sparked fresh opportunities.</h6>
-      </div>
-    </div>
-    </div>
-  </main>
 </body>
 </html>

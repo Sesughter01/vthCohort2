@@ -1,33 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+<html>
 <body>
-  <script>
-    
-// Numbers:
-let length = 16;
-let weight = 7.5;
 
-// Strings:
-let color = "Yellow";
-let lastName = "Johnson";
+<h2>JavaScript Template Literals</h2>
 
-// Booleans
-let x = true;
-let y = false;
+<p>Template literals allows variables in strings:</p>
 
-// Object:
-const person = {firstName:"John", lastName:"Doe"};
+<p id="demo"></p>
 
-// Array object:
-const cars = ["Saab", "Volvo", "BMW"];
+<p>Template literals are not supported in Internet Explorer.</p>
 
-// Date object:
-const date = new Date("2022-03-25");
-  </script>
+<script>
+let price = 10;
+let VAT = 0.25;
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+document.getElementById("demo").innerHTML = total;
+</script>
+
 </body>
 </html>

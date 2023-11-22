@@ -55,14 +55,16 @@ function myFunction(x) {
 
 //   How to Create  A Javascript Object
 
-const car = {
+
+
+const car_1 = {
     name:'toyota',
     color:'white',
     weight:500
 };
 const emptyObj = {};
 
-console.log(typeof(emptyObj))
+// console.log(typeof(emptyObj))
 
 
   

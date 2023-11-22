@@ -1,9 +1,10 @@
 function updateBrand(obj) {
     // Mutating the object is visible outside the function
-    obj.brand = "Toyota";
+    obj_1 = obj;
     // Try to reassign the parameter, but this won't affect
     // the variable's value outside the function
-    obj = null;
+    // obj = null;
+    return obj_1
   }
   
   const car = {
@@ -19,6 +20,6 @@ function updateBrand(obj) {
   
   // updateBrand mutates car
   console.log(car.brand); // Toyota
-  document.getElementById("account_number").innerHTML = updateBrand(car);
+  document.getElementById("account_number").innerHTML = updateBrand("Toyota");
 
   

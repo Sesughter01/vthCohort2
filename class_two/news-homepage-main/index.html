@@ -86,30 +86,153 @@
            <div>
                <h3>Is VC Funding Drying Up?</h3>
                <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p><br><br>
+               <script>
+                let text = `Private funding by VC firms is down 50% YOY. We take a look at what that means.`;
+                document.getElementById("demo").innerHTML = text;
+                </script>
+                <script>
+                  let text =
+                  
+                  `The quick
+                  brown fox
+                  jumps over
+                  the lazy dog`;
+                  
+                  document.getElementById("demo").innerHTML = text;
+                  </script>
+                  <p id="demo"></p>
 
+                  <script>
+                  let x = 999999999999999;
+                  let y = 9999999999999999;
+                  document.getElementById("demo").innerHTML = x + "<br>" + y;
+                  let x = 100;         // x is a number
+                  let y = "100";       // y is a string
+                  </script>
+<script>
+  let x = 160;
+  document.getElementById("numbermethod").innerHTML =
+    x.toString() + "<br>" +
+     (160).toString() + "<br>" +
+     (130 + 30).toString();
+
+     let x = 9.656;
+document.getElementById("demo").innerHTML =
+  x.toExponential() + "<br>" + 
+  x.toExponential(2) + "<br>" + 
+  x.toFixed(0) + "<br>" +
+  x.toFixed(4) + "<br>" +
+  x.toPrecision(6) + "<br>" +
+  x.valueOf() + "<br>" +
+  (123).valueOf() + "<br>" +;
+  </script>
            </div>
         </div>
       </div>
    </div>
    
-   <!--               
-                      01
-                      Reviving Retro PCs
-                      What happens when old PCs are given modern upgrades?
+   <script>
+    let x = Number.POSITIVE_Reviving Retro PCs;
+    document.getElementById("demo").innerHTML = x;
+    let x = Number.NEGATIVE_Retro PCs;
+    document.getElementById("demo").innerHTML = x;
+    </script> 
+                  
+            <script>
+            const cars = ["02", "Top 10 Laptops of 2022", "Our best picks for various needs and budgets."];
+             document.getElementById("demo").innerHTML = cars;
+             const cars = new Array("02", "Top 10 Laptops of 2022", "Our best picks for various needs and budgets."); 
+            document.getElementById("demo").innerHTML = cars;
+            </script> 
+            
+            <script>
+              const fruits = ["Banana", "Orange", "Apple", "Mango"];
+              document.getElementById("demo1").innerHTML = fruits;
               
-                      02
-                      Top 10 Laptops of 2022
-                      Our best picks for various needs and budgets.
+              fruits.sort();   // First sort the array
+              // Then reverse it:
+              fruits.reverse();
+              document.getElementById("demo2").innerHTML = fruits;
+              </script>
               
-                      03
-                      The Growth of Gaming
-                      How the pandemic has sparked fresh opportunities. -->
+              <script>
+              const points = [40, 100, 1, 5, 25, 10];
+              document.getElementById("demo").innerHTML = points;  
+              
+              function myFunction1() {
+                points.sort();
+                document.getElementById("demo").innerHTML = points;}
+              function myFunction2() {
+                points.sort(function(a, b){return a - b});
+                document.getElementById("demo").innerHTML = points;}
+                </script>
+              
+              <script>
+                try {
+                  const cars = ["Saab", "Volvo", "BMW"];
+                  cars = ["wrongfatalerror", "Volvo", "Audi"];
+                }     
+                var cars = ["Saab", "Volvo", "BMW"];
+// Here cars[0] is "Saab"
+{  
+  var cars = ["Toyota", "Volvo", "BMW"]; 
+  // Here cars[0] is "Toyota"
+}
+// Here cars[0] is "Toyota"
+document.getElementById("demo").innerHTML = cars[0];
+
+var cars = ["Volvo", "BMW"];     // Allowed
+const cars = ["Volvo", "BMW"];   // Not allowed
+</script>
+
+<script>
+  const d = new Date("2015-03-25");
+  const d = new Date("may 25, 2022 10:52:07");
+  const d = new Date(9, 11, 24);
+  const d = new Date("2015-03-25T12:00:00Z");
+  document.getElementById("demo").innerHTML = d;
+  const d = new Date("1970-01-01");
+document.getElementById("demo").innerHTML = d.getTime();
+  </script>
 
                       <script>
                         let text = "Reviving Retro PCs";  // String written inside quotes
                         document.getElementById("demo").innerHTML = text;
+                        let text = "We are the so-called \"Vikings\" from the north.";
+document.getElementById("demo").innerHTML = text; 
                         </script>
-                       
+                        <script>
+                          let text 1 = "stringlength";
+                          document.getElementById("demo").innerHTML = text.length;
+                          let text2 = text1.toUpperCase();
+                          </script>
+                          <script>
+                            let text = "Apple, Banana, Kiwi";
+                            let part = text.slice(7,13);
+                            document.getElementById("demo").innerHTML = part; 
+                            </script>
+                            <button onclick="myFunction()">Try it</button>
+
+                            <p id="demo">Please visit Microsoft and Microsoft!</p>
+                            
+                            <script>
+                            function myFunction() {
+                              let text = document.getElementById("demo").innerHTML; 
+                              document.getElementById("demo").innerHTML =
+                              text.replace("Microsoft","W3Schools");
+                            }
+                            
+<script>
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate",15);
+document.getElementById("demo").innerHTML = index; 
+</script>  
+<script>
+const d = new Date();
+d.setMonth(11);
+document.getElementById("demo").innerHTML = d;
+</script>
+
        
   </main>
 </body>

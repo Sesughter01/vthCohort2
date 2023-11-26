@@ -1,171 +1,320 @@
-/*  EXTERNAL CSS  */
-/* External css is css styles written in a separate file from the html or javascript . External css is stored in a file that has a .css file extension */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
+/* Frontend Mentor Project Content */
 
-/* what is a css selector */
-/* A css selector is a name used to define an element , its attributes or its state */
-
-/* Element name selectors use the name of the element as the selector */
-
-body{
-    background-color: rgb(255, 255, 255);
+/* General Styles - 01 */
+/* Main Styles - 02 */
+*{
     margin: 0;
-    border: 3px solid red;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-nav{
-    /* background-color: brown; */
+:root{
+    /* Primary Colors */
+    --soft_orange:hsl(35, 77%, 62%);
+    --soft_red:hsl(5, 85%, 63%);
+
+    /* Neutral Colors */
+    --off_white: hsl(36, 100%, 99%);
+    --grayish_blue:hsl(233, 8%, 79%);
+    --dark_grayish_blue:hsl(236, 13%, 42%);
+    --very_dark_blue:hsl(240, 100%, 5%);
+    --very_dark_blue_transparent:rgba(0, 0, 25, 0.442);
+    
+
+    /* Typograpghy */
+
+    /* Font Sizes */
+
+    --paragraph_font_size: 15px;
+
+    /* Font weights */
+
+    --regular_fw:400;
+    --bold_fw:700;
+    --extra_bold_fw:800;
 }
 
-  img{
-   display: inline;
-  width: 200px;
+/* General Styles */
+.main_wrapper{
+    padding: 1rem;
+    height: 100vh;
 }
 
-p{
-    background-color: darkgoldenrod;
+li{
+    list-style: none;
 }
 
-/* id selector is used to uniquely identify an element*/
-
-
-#first{
-    background-color: azure;
+a{
+    text-decoration: none;
+    color: var(--very_dark_blue);
+   font-weight: var(--regular_fw);
 }
-#second{
-    background-color: rgb(18, 122, 122);
+hr{
+
+    border-color: var(--grayish_blue);
 }
 
+#input{
+   opacity: 0;
+}
+/* Main Styles */
 
+/* Header Styles */
 
-/* Class selectors are used to select multiple elements in order to same styles to them */
-
-.main_header{
+.mainHeader{
+    /* position: absolute; */
     display: flex;
-    flex-direction: row;
- }
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+}
 
-/* Combinator selectors */
+/* Logo styles */
 
-/* Combinator selectors are used to select elements based on the relationship between them */
 
- /* descendant combinator */
 
- header ul{
+/* Navbar Styles */
+.navbar{
+    background-color:var(--very_dark_blue_transparent) ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(150%);
+    transition: transform 500ms ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Nav List Styles  */
+
+.navlist{
+   position: absolute;
+   background-color: var(--off_white);
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 25%;
+   padding-block-start: 30%;
+   padding-inline-start: 2rem;
+  
+
+}
+
+/* Nav Item Styles */
+
+.navItem{
+    margin-block: 2rem;
+}
+
+/* Menu Container Styles */
+
+.menuContainer{
+ display: block;
+ position: absolute;   
+ right: 1rem;
+    
+   
+}
+
+.menuButton{
+    position: absolute;
+    z-index: 1000;
+}
+
+/* Hamburger Styles */
+
+.hamburger, .hamburger::before, .hamburger::after{
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 3px;
+    background-color: var(--very_dark_blue);
+    z-index: 1000;
+
+}
+
+.hamburger{
+  
+    right: 1rem;
+}
+.hamburger::before{
+    content: "";
+    top: -6px;
+
+}
+.hamburger::after{
+    content: "";
+    top: 6px;
+
+}
+/* Active State */
+#input:checked{
+    position: absolute;
+    right: 1rem;
+    z-index: 1000;
+}
+#input:checked ~ .menuContainer .hamburger{
+    transform:rotate(0.625turn);
+}
+#input:checked ~ .menuContainer .hamburger::before{
+    transform:rotate(90deg) translateX(6px);
+}
+#input:checked ~ .menuContainer .hamburger::after{
+    opacity:0;
+}
+#input:checked + .navbar{
+    transform: translateX(0%);
+    z-index: 500;
+}
+
+/* Section One Styles */
+
+.section_one{
     display: flex;
- }
- /* child selector */
- nav > li{
-    background-color: blue;
- }
- .main{
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper{
     display: flex;
-    flex-direction: row;
- }
- .main img{
-    height: 100px;
-    width: 200px;
- }
-
- .boxmodel{
-    width: 100%;
-    height: 20px;
-    padding: 5px;
-    border: 5px rgb(39, 25, 25);
-    margin: 0;
-    gap: 20px;
+    flex-direction: column;
+}
+.wrapper .img{
+height:50% ;
+}
+.wrapper .img img{
+max-width:100% ;
 }
 
-/* Sibling */
+/* Main Text Styles */
 
-
-main{
-display: flex;
-flex-direction: row;
-gap: 20px;
+.text .mainText{
+   font-weight: var(--extra_bold_fw);
+   font-size: 2.5rem;
+   padding-inline-end: 2rem;
 }
-#first{
-    width: 25%;
-    height: 100px;
-}
-#second{
-    width: 25%;
-    height: 100px;
-}
-#third{
-    width: 25%;
-    height: 100px;
-}
-.solid{
-    border: 3px black;
-    outline-style: solid;
-    outline-color: black;
-    outline-width: medium;
-}
-.groove{
-    border: 2px black;
-    outline-color: aqua;
-    outline-style: groove;
-}
-.ridge{
-    margin: 20px;
-    background-color: purple;
-    border: 1px black;
-    outline: 1px red;
-    outline-offset: 15px;
-}
-.color{
-    color: brown;
-    background-color: yellowgreen;
-    text-indent: 30px;
-    letter-spacing: 10px;
+.text .subtext{
+    color: var(--dark_grayish_blue);
+    margin-block: 1rem;
     line-height: 1.5;
-    word-spacing: 10px;
-    white-space: nowrap;
 }
-#one{
-    text-align: center;
+
+/* Main Link Styles */
+
+.section_one .link {
+    margin-block-start: 1rem;
+    margin-block-end: 2rem;
+ 
     
 }
-#two{
-    text-align: left;
+
+.section_one .link a{
+    background-color: var(--soft_red);
+    padding-block: 0.8rem;
+    padding-inline: 3rem;
+    text-transform: uppercase;
+    color: var(--off_white);
+    letter-spacing:0.5rem;
 }
-#three{
-    text-align: right;
+
+/* Section two Styles */
+
+.section_two{
+    background-color: var(--very_dark_blue);
+    padding: 1rem;
+   
 }
-.dotted{
-    text-align: justify;
+
+/* Sec_title styles */
+.section_title{
+    margin-block-end: 1rem;
 }
-#first{
-    text-align-last: center;
+.section_title .title{
+    color: var(--soft_orange);
 }
-#second{
-    text-align-last: justify;
+
+/* Section_content styles */
+/* .section_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+.section_content .sub_section{
+    padding-block: 2rem;
 }
-#third{
-    text-align-last: right;
+
+.section_content .sub_section .sub_section-title {
+  margin-block-end: 1rem;
 }
-.text{
-    text-decoration-line: underline;
-    text-decoration-color: green;
-    text-decoration-style: dashed;
-    text-decoration-thickness: 5px;
-    text-transform: lowercase;
+.section_content .sub_section .sub_section-title h3{
+  color: var(--off_white);
 }
-.outline{
-    text-shadow: 2px 2px 5px blueviolet;
-    font-style: italic;
-    font-weight: normal;
-    font-variant: small-caps;
-    font-size: 30px;
+.section_content .sub_section .sub_section-subtitle p{
+  color: var(--grayish_blue);
 }
-.font{
-    font-family: "Times New Roman", Times, serif;
+.card{
+    border: 2px black;
+    width: 100%;
+    background-color: var(--very_dark_blue);
+    color: white;
+    padding: 20px;
+    
+    
+}
+.card h1{
+    color: yellowgreen;
+}
+.container{
+    display: flex;
+    flex-direction: row
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+.main img{
+    height: 200px;
+    width: 30%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row ;
+    
 
 }
-.last{
-    font-style: oblique;
-    font-weight: bold;
-    font-variant: normal;
-    font-size: 0.70rem;
+
+.one{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+}
+.two{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.three{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+} 
+.first{
+    color: gray
+}
+.go{
+    color: black;
+}
+.bo{
+    color: black;
+}
+.so{
+    color: black;
 }

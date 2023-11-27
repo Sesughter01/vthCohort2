@@ -87,6 +87,7 @@ myArray[0] = 'toyota'
 // console.log(myObject )
 
 // alert(1%2)
+<<<<<<< HEAD
 
 function contentOne(){
   document.getElementById('text_1').innerHTML = "Hi good job!" ;
@@ -103,3 +104,9 @@ function myAlert(){
   alert('Learning JavaScript');
 }
 
+=======
+function Content(){
+  document.getElementById("text_one").innerHTML= "Change content";
+  document.getElementById("text_two").innerHTML= "Change content";
+}
+>>>>>>> aisha

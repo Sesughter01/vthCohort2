@@ -8,6 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: blue;
+
 }
 
 .nav{
@@ -101,3 +103,4 @@ header a:active{
     /* font-size: 2.5em; */
     /* color: whitesmoke; */
 }
+

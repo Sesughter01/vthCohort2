@@ -13,7 +13,64 @@ function myFunction() {
 
 <p id="demo">Hello World</p>
 
+<<<<<<< HEAD
 <button type="button" onclick="myFunction()">Click to Change</button>
+=======
+
+    
+
+    
+
+    <!-- Introduction Javascript -->
+
+    <!-- Javascript Can Change HTML Content -->
+ <div class="change_html_content">
+     <h2>What Can JavaScript Do?</h2>
+     <button type="button" onclick="textFunction()">Set text to center</button>
+
+ 
+      <p id="demo">JavaScript can change HTML content.</p>
+ 
+     <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Super Eagles!</button> <!--Inline Javascript-->
+     
+
+ </div>
+
+ <div class="change_attr_values">
+    
+        <p>JavaScript can change HTML attribute values.</p>
+
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+        <button onclick="document.getElementById('myImage').src='../assets/pic_bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="../assets/pic_bulboff.gif" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src='../assets/pic_bulboff.gif'">Turn off the light</button>
+ </div>
+
+
+ <div class="change_style_values">
+
+    <p>Welcome to Javascript</p>
+
+    <p id="sent">Hello Javascript</p>
+
+    <button onclick="document.getElementById('sent').style.fontSize='50px'">Change</button>
+
+    <img src="/assets/tables.png" alt="">
+  </div>  
+  <button type="button" onclick="myFunction()">Set background color</button>
+
+  <script>
+  function myFunction() {
+    document.body.style.backgroundColor = "blue";
+  }
+  function textFunction() {
+    document.body.style.textAlign = "center";
+  }
+  </script>
+>>>>>>> aisha
 
 </body>
 </html> 

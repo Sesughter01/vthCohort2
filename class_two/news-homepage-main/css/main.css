@@ -257,4 +257,21 @@ max-width:100% ;
 .section_content .sub_section .sub_section-subtitle p{
   color: var(--grayish_blue);
 }
+/* styling section_Three */
+.section_Three{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 15px;
+    color: black;
+  }
+  .image{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 25px;
+  }
+
+    
 

@@ -3,16 +3,14 @@
 /*
 
  1. String
+
  2. Number
  3. BigInt
  4. Boolean
  5. Undefined
  6. Null
  7. Symbol
- 1. None
-
-
-
+ 8.0bject
 
 */
 
@@ -22,12 +20,10 @@
  * 1. Object
  * 2. Array
  * 3. Date
- * 
- * 
- */
-
+  
 
 // Examples of String
+
 
 // Lets declare a variable called bank_account
 

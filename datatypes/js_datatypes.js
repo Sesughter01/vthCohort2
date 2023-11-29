@@ -3,14 +3,24 @@
 /*
 
  1. String
+<<<<<<< HEAD
 
+=======
+>>>>>>> 958253063444963abc7e6d73148ae2763129cfcd
  2. Number
  3. BigInt
  4. Boolean
  5. Undefined
  6. Null
  7. Symbol
+<<<<<<< HEAD
  8.0bject
+=======
+ 1. None
+
+
+
+>>>>>>> 958253063444963abc7e6d73148ae2763129cfcd
 
 */
 
@@ -20,11 +30,21 @@
  * 1. Object
  * 2. Array
  * 3. Date
+<<<<<<< HEAD
   
 
 // Examples of String
 
 
+=======
+ * 
+ * 
+ */
+
+
+// Examples of String
+
+>>>>>>> 958253063444963abc7e6d73148ae2763129cfcd
 // Lets declare a variable called bank_account
 
 // There are 3 major keywords used in creating variables in JS

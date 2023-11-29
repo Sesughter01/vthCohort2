@@ -1,8 +1,14 @@
 let text = "Apple, Banana, Kiwi";
 
+<<<<<<< HEAD
 let fruit = text.slice(0,5);
 
 document.getElementById("fruit").innerHTML=fruit;
+=======
+let part = text.slice(7,13);
+
+console.log(part);
+>>>>>>> 958253063444963abc7e6d73148ae2763129cfcd
 
 function updateBrand(obj){
     obj.brand = "Toyota";

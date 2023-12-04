@@ -1,15 +1,5 @@
 // Do class work here
 // let text = "";
-<<<<<<< HEAD
-//         for(let i= 1; i< 16; i++) {
-//             text += "the number is" + i + "<br>";
-//         }
-//         document.getElementById("demo").innerHTML = text;
-        
-const fruits = ["Apple", "Banana", "Orange"];
-for (x fruits) {
-  
-=======
 
 // for (let i = 1; i < 16; i++) {
 //   text += "The number is " + i + "<br>";
@@ -40,5 +30,4 @@ const myfunction = (b,c) => {
 
 const myfunction = function(b,d){
 console.log(b)
->>>>>>> aisha
 }

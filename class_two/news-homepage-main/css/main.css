@@ -244,9 +244,9 @@ max-width:100% ;
     flex-direction: column;
     justify-content: space-between;
 } */
-.section_content .sub_section{
+.hamburger .sub_section{
     padding-block: 2rem;
-}
+ }
 
 .section_content .sub_section .sub_section-title {
   margin-block-end: 1rem;
